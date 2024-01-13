@@ -1,4 +1,3 @@
-header{
-    color: aqua;
-    font-size: 12px;
-}
+@forward "./common/_init_.scss";
+@forward "./layout/_init_.scss";
+@forward "./project/_init_.scss";
