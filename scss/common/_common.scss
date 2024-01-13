@@ -25,7 +25,37 @@ a{
     color: #fff;
     -webkit-text-stroke: 1px #F7F7DC;
 }
+.under-line{
+    text-decoration: underline;
+}
 
+// LPの共通タイトル
+.sec-title {
+    margin-bottom: 25px;
+    span{
+        display: block;
+    }
+    &--en {
+        font-family: Galvji;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+    }
+    &--ja {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        line-height: 24px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+// お問い合わせフォームタイトル
 .contact-title{
     font-family: Galvji;
     font-weight: normal;
@@ -37,9 +67,9 @@ a{
     padding: 123px 0 20px;
 }
 
+
 // LP下部にあるasterliskのロゴとメニュー
 .asterisk-under {
-    
     &__wrap {
         margin-bottom: 30px;
     }
@@ -50,7 +80,6 @@ a{
         line-height: 26px;
         text-align: center;
         color: #fff;
-
     }
     &__title--big {
         font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
@@ -59,7 +88,6 @@ a{
         line-height: 26px;
         text-align: center;
         color: #fff;
-
     }
     &__title--little {
         font-family: "Hiragino Sans";
@@ -69,7 +97,6 @@ a{
         line-height: 24px;
         text-align: center;
         color: #fff;
-
     }
     &__menu {
         margin-bottom: 20px;

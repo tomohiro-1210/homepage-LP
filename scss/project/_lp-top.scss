@@ -1,0 +1,240 @@
+// fv
+.fv{
+    max-width: 500px;
+    height: 100vh;
+}
+
+// is it hope you?
+.hope {
+    margin-bottom: 80px;
+    &__contain{
+    }
+    &__title {
+        width: 324px;
+        height: 69px;
+        margin: 0 auto 40px;
+    }
+    &__catch {
+        width: fit-content;
+        margin: 0 auto 40px;
+    }
+    &__top {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 0.05em;
+        line-height: 28px;
+        text-align: center;
+        color: #fff;
+
+    }
+    &__head {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        line-height: 28px;
+        text-align: center;
+        color: #ff0;
+        background-color: rgba($color: #fff, $alpha: 0.35);
+    }
+    &__img {
+        width: 127px;
+        height: 330px;
+        margin: 0 auto 40px;
+    
+    }
+    &__foot{
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 0.05em;
+        line-height: 25px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    &__text{
+        width: 308px;
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        line-height: 28px;
+        text-align: left;
+        color: #fff;
+        margin: 0 auto 40px;
+
+    }
+    &__list {
+    
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    &__item__contain {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 272px;
+        margin: 0 auto;
+    }
+    &__label {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        line-height: 28px;
+        text-align: center;
+        color: #ff0;
+        background-color: rgba($color: #fff, $alpha: 0.35);
+        width: 100px;
+    }
+    &__point--catch {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        line-height: 28px;
+        text-align: left;
+        color: #fff;
+
+    }
+    &__point--img {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+
+
+// こんな想いありませんか？
+.desire {
+    margin-bottom: 80px;
+    &__wrapper{
+        margin: 0 auto;
+    }
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    
+        img{
+            width: 18px;
+            height: 18px;
+        }
+        span{
+            display: block;
+            font-family: "Hiragino Sans";
+            font-weight: normal;
+            font-size: 20px;
+            letter-spacing: 0.05em;
+            line-height: 46px;
+            text-align: left;
+            color: #fff;
+        }
+    }
+    &__img {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto 80px;
+    }
+    &__list {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 0.05em;
+        line-height: 44px;
+        text-align: left;
+        color: #fff;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+// faq
+.faq {
+    margin-bottom: 80px;
+    &__list{
+        max-width: 350px;
+        padding: 0 20px;
+        margin: 0 auto 50px;
+    }
+    &__item {
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        padding: 8.5px 0;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    &__question,
+    &__answer {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        line-height: 26px;
+        text-align: left;
+        color: #fff;
+    }
+    &__question{
+        border-bottom: solid 1px #fff;
+        margin-bottom: 15px;
+    }
+    &__answer{
+        padding-top: 10px;
+        display: none;
+    }
+    &__answer--1.show{
+        display: block;
+    }
+
+}
+
+// entry
+.entry {
+    margin-bottom: 80px;
+    &-form{
+        background-color: aquamarine;
+        color: black;
+        height: 300px;
+    }
+
+}
+
+
+
+// 会社概要
+.company {
+    margin-bottom: 80px;
+    &__list{
+        max-width: 264px;
+        margin: 0 auto;
+    }
+    &__item {
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        padding: 8.5px 0;
+        border-bottom: dotted 1px #fff;
+    }
+    &__item:last-child {
+        border-bottom: none;
+    }
+
+}
+
+

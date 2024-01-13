@@ -101,6 +101,35 @@ a {
   -webkit-text-stroke: 1px #F7F7DC;
 }
 
+.under-line {
+  text-decoration: underline;
+}
+
+.sec-title {
+  margin-bottom: 25px;
+}
+.sec-title span {
+  display: block;
+}
+.sec-title--en {
+  font-family: Galvji;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+}
+.sec-title--ja {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
 .contact-title {
   font-family: Galvji;
   font-weight: normal;
@@ -445,6 +474,219 @@ a {
   text-align: center;
   color: #fff;
   padding: 20px 0;
+}
+
+.fv {
+  max-width: 500px;
+  height: 100vh;
+}
+
+.hope {
+  margin-bottom: 80px;
+}
+.hope__title {
+  width: 324px;
+  height: 69px;
+  margin: 0 auto 40px;
+}
+.hope__catch {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 40px;
+}
+.hope__top {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+}
+.hope__head {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  text-align: center;
+  color: #ff0;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+.hope__img {
+  width: 127px;
+  height: 330px;
+  margin: 0 auto 40px;
+}
+.hope__foot {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.hope__text {
+  width: 308px;
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  text-align: left;
+  color: #fff;
+  margin: 0 auto 40px;
+}
+.hope__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.hope__item__contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 272px;
+  margin: 0 auto;
+}
+.hope__label {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  text-align: center;
+  color: #ff0;
+  background-color: rgba(255, 255, 255, 0.35);
+  width: 100px;
+}
+.hope__point--catch {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  text-align: left;
+  color: #fff;
+}
+.hope__point--img {
+  width: 100px;
+  height: 100px;
+}
+
+.desire {
+  margin-bottom: 80px;
+}
+.desire__wrapper {
+  margin: 0 auto;
+}
+.desire__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.desire__text img {
+  width: 18px;
+  height: 18px;
+}
+.desire__text span {
+  display: block;
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  line-height: 46px;
+  text-align: left;
+  color: #fff;
+}
+.desire__img {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 80px;
+}
+.desire__list {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.faq {
+  margin-bottom: 80px;
+}
+.faq__list {
+  max-width: 350px;
+  padding: 0 20px;
+  margin: 0 auto 50px;
+}
+.faq__item {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 8.5px 0;
+}
+.faq__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.faq__question, .faq__answer {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+}
+.faq__question {
+  border-bottom: solid 1px #fff;
+  margin-bottom: 15px;
+}
+.faq__answer {
+  padding-top: 10px;
+  display: none;
+}
+.faq__answer--1.show {
+  display: block;
+}
+
+.entry {
+  margin-bottom: 80px;
+}
+.entry-form {
+  background-color: aquamarine;
+  color: black;
+  height: 300px;
+}
+
+.company {
+  margin-bottom: 80px;
+}
+.company__list {
+  max-width: 264px;
+  margin: 0 auto;
+}
+.company__item {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 8.5px 0;
+  border-bottom: dotted 1px #fff;
+}
+.company__item:last-child {
+  border-bottom: none;
 }
 
 .contact-confirm {
