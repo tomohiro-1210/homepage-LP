@@ -110,6 +110,39 @@ a {
   text-decoration: underline;
 }
 
+.induction {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+.induction__button {
+  width: 50%;
+  border: solid 1px #B4CCF8;
+  background-color: rgba(180, 204, 248, 0.35);
+}
+.induction__button__wrap {
+  padding: 12px;
+}
+.induction__button--en {
+  font-family: Galvji;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+}
+.induction__button--ja {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+}
+
 .sec-title {
   margin-bottom: 25px;
 }
@@ -455,6 +488,9 @@ a {
   text-align: center;
 }
 
+.l-footer {
+  padding-bottom: 79px;
+}
 .l-footer__sns {
   display: flex;
   justify-content: center;

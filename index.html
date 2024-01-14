@@ -26,37 +26,37 @@
             <div class="sp-menu">
                 <ul class="sp-menu__list">
                     <li class="sp-menu__item">
-                        <a href="#">
+                        <a href="#desire">
                             <span class="sp-menu__number">01</span>
                             <span class="sp-menu__name">アステリスクとは</span>
                         </a>
                     </li>
                     <li class="sp-menu__item">
-                        <a href="#">
+                        <a href="#why">
                             <span class="sp-menu__number">02</span>
                             <span class="sp-menu__name">秘密</span>
                         </a>
                     </li>
                     <li class="sp-menu__item">
-                        <a href="#">
+                        <a href="#flow">
                             <span class="sp-menu__number">03</span>
                             <span class="sp-menu__name"><span class="mark">*</span>の強み</span>
                         </a>
                     </li>
                     <li class="sp-menu__item">
-                        <a href="#">
+                        <a href="#development">
                             <span class="sp-menu__number">04</span>
                             <span class="sp-menu__name">納品の流れ</span>
                         </a>
                     </li>
                     <li class="sp-menu__item">
-                        <a href="#">
+                        <a href="#plan">
                             <span class="sp-menu__number">05</span>
                             <span class="sp-menu__name">プラン/料金</span>
                         </a>
                     </li>
                     <li class="sp-menu__item">
-                        <a href="#">
+                        <a href="#company">
                             <span class="sp-menu__number">06</span>
                             <span class="sp-menu__name">会社概要</span>
                         </a>
@@ -396,7 +396,7 @@
             </section>
             <!-- /その他にも、集客、求人の環境が整っています。 -->
 
-            <!-- development -->
+            <!-- 納品までの流れはこちらです。 -->
             <section class="development" id="development">
                 <h2 class="sec-title">
                     <span class="sec-title--en">DEVELOPMENT PROCESS</span>
@@ -450,7 +450,7 @@
                         <p class="development__text no-arrow">サーバーアップとは、完成したウェブサイトのファイルをインターネット上のサーバーにアップロードすることです。これによりウェブサイトがオンラインで公開され、誰でもアクセスできるようになります。</p>
                     </div>
                 </div>
-            </section><!-- /development -->
+            </section><!-- /納品までの流れはこちらです。 -->
 
             <!-- plan -->
             <section class="plan" id="plan">
@@ -616,7 +616,7 @@
                     <div class="follow-me__btn follow-me__btn--instagram"><a href="#"><img src="./assets/img/sns-instagram.png" alt="instagram">Instagram</a></div>
                 </div>
                 <!-- フォーム -->
-                <form method="post" action="mail.php" class="entry__form">
+                <form method="post" action="mail.php" class="entry__form" id="contact">
                     <div class="entry__form__radio">
                         <div class="entry__form__inputitems">
                             <p class="entry__form__inputitem">応募種別*</p>
@@ -678,7 +678,7 @@
             </section><!-- /entry -->
 
             <!-- company -->
-            <div class="company">
+            <div class="company" id="company">
                 <h2 class="sec-title">
                     <span class="sec-title--en">COMPANY</span>
                     <span class="sec-title--ja">運営会社</span>
@@ -702,26 +702,25 @@
                 </div>
                 <ul class="asterisk-under__menu">
                     <li class="asterisk-under__list">
-                        <a href="#">アステリスクとは</a>
+                        <a href="#desire">アステリスクとは</a>ステステ
                     </li>
                     <li class="asterisk-under__list">
-                        <a href="#">秘密</a>
+                        <a href="#why">秘密</a>
                     </li>
                     <li class="asterisk-under__list">
-                        <a href="#">＊の強み</a>
+                        <a href="#flow">＊の強み</a>
                     </li>
                     <li class="asterisk-under__list">
-                        <a href="#">納品までの流れ</a>
+                        <a href="#development">納品までの流れ</a>
                     </li>
                     <li class="asterisk-under__list">
-                        <a href="#">プラン/料金</a>
+                        <a href="#plan">プラン/料金</a>
                     </li>
                     <li class="asterisk-under__list">
-                        <a href="#">会社概要</a>
+                        <a href="#company">会社概要</a>
                     </li>
                 </ul>
             </div>
-        </main>
 
         <!-- footer -->
         <footer class="l-footer">
@@ -744,6 +743,22 @@
             </ul>
             <p class="l-footer__copy">Copyright © アステリスク all rights reserved.</p>
         </footer>
+
+        <!-- 誘導ボタン -->
+        <div class="induction">
+            <div class="induction__button">
+                <a href="#entry" class="induction__button__wrap">
+                    <p class="induction__button--en">ENTRY</p>
+                    <p class="induction__button--ja">ご応募</p>
+                </a>
+            </div>
+            <div class="induction__button">
+                <a href="#contact" class="induction__button__wrap">
+                    <p class="induction__button--en">CONTACT</p>
+                    <p class="induction__button--ja">お問い合わせ</p>
+                </a>
+            </div>
+        </div>
     </div>
 
     <!-- jquery/js -->

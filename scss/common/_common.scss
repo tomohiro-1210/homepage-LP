@@ -34,6 +34,42 @@ a{
     text-decoration: underline;
 }
 
+// 誘導ボタン
+.induction {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    &__button {
+        width: 50%;
+        border: solid 1px #B4CCF8;
+        background-color: rgba($color: #B4CCF8, $alpha: 0.35);
+        &__wrap{
+            padding: 12px;
+        }
+    }
+    &__button--en {
+        font-family: Galvji;
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #fff;        
+    }
+    &__button--ja {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 10px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #fff;        
+    }
+}
+
+
+
 // LPの共通タイトル
 .sec-title {
     margin-bottom: 25px;
