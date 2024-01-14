@@ -978,6 +978,163 @@ a {
   margin: 0 auto;
 }
 
+.development {
+  margin-bottom: 80px;
+}
+.development__contain {
+  width: calc(100% - 44px);
+  margin: 0 auto;
+  padding: 0 0 0 16px;
+}
+.development__contain:not(:last-child) {
+  margin-bottom: 20px;
+}
+.development__label {
+  position: relative;
+  margin-bottom: 15px;
+}
+.development__number {
+  font-family: Galvji;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 40px;
+  text-align: left;
+  color: #ff0;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+.development__detail {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+  padding: 15px 31px;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+.development__text {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+  width: calc(100% - 41px);
+  padding: 20px 20px;
+  margin-left: 10px;
+  border-left: solid 2px #fff;
+  position: relative;
+}
+.development__text::before {
+  position: absolute;
+  left: 1px;
+  top: 89%;
+  content: "";
+  width: 2.5px;
+  height: 15px;
+  background: #fff;
+  border-radius: 3px;
+  transform: rotate(30deg);
+}
+.development__text.no-arrow {
+  border-left: none;
+  position: static;
+}
+.development__text.no-arrow::before {
+  position: static;
+  left: 0px;
+  top: 0%;
+  content: "";
+  width: 0px;
+  height: 0px;
+  background: #fff;
+  border-radius: 0px;
+  transform: rotate(30deg);
+}
+
+.plan {
+  border-top: solid 2px #fff;
+  padding-top: 20px;
+  margin-bottom: 80px;
+}
+.plan__contain {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+.plan__tabs {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.plan__tab {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+  line-height: 26px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: calc(50% - 10px);
+  padding: 10px 0;
+  cursor: pointer;
+  color: #000;
+  border-radius: 5px;
+}
+.plan__tab.active {
+  background-color: #000;
+  color: #fff;
+}
+.plan__menu {
+  display: none;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.plan__menu.active {
+  display: block;
+}
+.plan__list:not(:last-child) {
+  margin-bottom: 15px;
+  border-bottom: dotted 1px #000;
+}
+.plan__name, .plan__detail {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+}
+.plan__name {
+  color: #FF0000;
+}
+.plan__detail {
+  color: #000;
+  padding-bottom: 3px;
+}
+
+#tab2 {
+  border: 1px solid #000;
+  background-color: #000;
+}
+#tab2 .plan__detail {
+  color: #fff;
+}
+#tab2 .plan__list:not(:last-child) {
+  margin-bottom: 15px;
+  border-bottom: dotted 1px #fff;
+}
+#tab2 .plan__list:last-child {
+  padding-bottom: 20px;
+}
+
 .desire {
   margin-bottom: 80px;
 }

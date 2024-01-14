@@ -495,7 +495,182 @@
     }
 }
 
+// 納品までの流れはこちらです
+.development {
+    margin-bottom: 80px;
+    &__contain {
+        width: calc(100% - 44px);
+        margin: 0 auto;
+        padding: 0 0 0 16px;
+    }
+    &__contain:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    &__label {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    &__number {
+        font-family: Galvji;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+        line-height: 40px;
+        text-align: left;
+        color: #ff0;   
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%);     
+    }
+    &__detail {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        line-height: 26px;
+        text-align: left;
+        color: #fff;
+        padding: 15px 31px;          
+        background-color: rgba($color: #fff, $alpha: 0.35);    
+    }
+    // 以下は必要な時に出す
+    // &__desc{
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: stretch;
+    //     height: fit-content;
+    // }
+    // &__arrow{
+    //     min-width: 1px;
+    //     height: 100%;
+    // }
+    &__text {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        line-height: 26px;
+        text-align: left;
+        color: #fff;
+        width: calc(100% - 41px);
+        padding: 20px 20px;  
+        margin-left: 10px;
+        // 矢印関連
+        border-left: solid 2px #fff;  
+        position: relative;
+    }
+    // 矢印関連
+    &__text::before {  
+        position: absolute;
+        left: 1px;
+        top: 89%;
+        content: "";
+        width: 2.5px;
+        height: 15px;
+        background: #fff;
+        border-radius: 3px;
+        transform: rotate(30deg);
+    }
+    &__text.no-arrow {
+        // 矢印関連
+        border-left: none;  
+        position: static;
+    }
+    // 矢印関連
+    &__text.no-arrow::before {  
+        position: static;
+        left: 0px;
+        top: 0%;
+        content: "";
+        width: 0px;
+        height: 0px;
+        background: #fff;
+        border-radius: 0px;
+        transform: rotate(30deg);
+    }
+}
 
+// プラン
+.plan{
+    border-top: solid 2px #fff;
+    padding-top: 20px;
+    margin-bottom: 80px;
+    &__contain{
+        width: calc(100% - 30px);
+        margin: 0 auto;
+    }
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+    &__tab {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 15px;
+        text-align: center;
+        line-height: 26px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        width: calc(50% - 10px);
+        padding: 10px 0;
+        cursor: pointer;
+        color: #000;
+        border-radius: 5px;
+        
+    }
+    &__tab.active {
+        background-color: #000;
+        color: #fff;
+    }
+    &__menu {
+        display: none;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    &__menu.active {
+        display: block;
+    }
+    &__list:not(:last-child) {
+        margin-bottom: 15px;
+        border-bottom: dotted 1px #000;
+    }
+    &__name,
+    &__detail {        
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+
+    }
+    &__name {
+        color: #FF0000;
+    }
+    &__detail {
+        color: #000;
+        padding-bottom: 3px;
+    }
+}
+
+#tab2{
+    border: 1px solid #000;
+    background-color: #000;
+    .plan__detail{
+        color: #fff;
+    }
+    .plan__list:not(:last-child) {
+        margin-bottom: 15px;
+        border-bottom: dotted 1px #fff;
+    }
+    .plan__list:last-child {
+        padding-bottom: 20px;
+    }
+}
 
 
 // こんな想いありませんか？
