@@ -78,6 +78,11 @@ html {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 li {
   list-style: none;
 }
@@ -88,7 +93,7 @@ a {
 
 .lp-wrap {
   background-color: #3E87FD;
-  max-width: 500px;
+  max-width: 420px;
   margin: 0 auto;
 }
 
@@ -401,7 +406,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 500px;
+  max-width: 400px;
 }
 .l-header__logo {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
@@ -748,6 +753,229 @@ a {
 }
 .why__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.flow {
+  margin-bottom: 80px;
+}
+.flow__contain {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 40px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+.flow__list {
+  width: 85%;
+  padding: 0 60px 0 20px;
+}
+.flow__item {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: rgba(255, 255, 255, 0.35);
+  position: relative;
+}
+.flow__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.flow__number {
+  font-family: Yantramanav;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  line-height: 46px;
+  text-align: left;
+  color: #ff0;
+  position: absolute;
+  top: 0%;
+  left: 3.25rem;
+  transform: translate(-50%, -50%);
+}
+.flow__detail {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+}
+.flow__arrow {
+  width: 15px;
+}
+.flow__text {
+  width: calc(15% - 15px);
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+  color: #ff0;
+  writing-mode: vertical-rl;
+  letter-spacing: 2px;
+}
+
+.entry {
+  margin-bottom: 80px;
+}
+.entry__img {
+  width: 290px;
+  height: 170px;
+  margin: 0 auto 80px;
+}
+
+.premium {
+  margin-bottom: 80px;
+}
+.premium__title {
+  font-family: Galvji;
+  font-weight: normal;
+  font-size: 52px;
+  letter-spacing: 0.02em;
+  line-height: 54px;
+  text-align: left;
+  color: #ff0;
+  margin-bottom: 50px;
+}
+.premium__text {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 50px;
+}
+.premium__img {
+  width: 350px;
+  height: 170px;
+  margin: 0 auto 0px;
+}
+
+.strength {
+  margin-bottom: 80px;
+}
+.strength__title {
+  font-family: Galvji;
+  font-weight: normal;
+  font-size: 52px;
+  letter-spacing: 0.02em;
+  line-height: 54px;
+  text-align: center;
+  color: #ff0;
+  margin-bottom: 50px;
+}
+.strength__it {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto 50px;
+}
+.strength__content:not(:last-child) {
+  margin-bottom: 60px;
+}
+.strength__subTitle {
+  font-family: Galvji;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 17px;
+  text-align: left;
+  color: #ff0;
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 15px 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+.strength__subTitle.white {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.strength__subTitle.right {
+  background-color: rgba(0, 0, 0, 0);
+  width: calc(100% - 0px);
+  padding: 0;
+  text-align: right;
+}
+.strength__subTitle.right span {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 10px 30px;
+}
+.strength__subTitle--big {
+  font-size: 48px;
+  color: #ff0;
+}
+.strength__text {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 22px;
+  text-align: left;
+  color: #fff;
+  padding: 0 40px;
+}
+
+.attract {
+  margin-bottom: 80px;
+}
+.attract__word {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 80px;
+}
+.attract__content:not(:last-child) {
+  margin-bottom: 30px;
+}
+.attract__label {
+  font-family: "Hiragino Sans";
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 15px;
+  text-align: left;
+  color: #fff;
+  padding: 15px 30px;
+  width: calc(100% - 110px);
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+.attract__img {
+  width: 280px;
+  margin: 0 auto 20px;
+}
+.attract__text {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 22px;
+  text-align: left;
+  color: #fff;
+  width: calc(100% - 70px);
+  margin: 0 auto;
 }
 
 .desire {

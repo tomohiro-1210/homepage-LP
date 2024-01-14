@@ -271,8 +271,231 @@
     &__item:not(:last-child) {
         margin-bottom: 30px;
     }
+}
+
+// flow
+.flow {
+    margin-bottom: 80px;
+    &__contain {
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% - 40px);
+        height: fit-content;
+        margin: 0 auto;
+    }
+    &__list {
+        width: 85%;
+        padding: 0 60px 0 20px;
+    }
+    &__item {
+        width: 100%;
+        padding: 30px 20px;
+        background-color: rgba($color: #fff, $alpha: 0.35);
+        position: relative;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    &__number {
+        font-family: Yantramanav;
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 0.05em;
+        line-height: 46px;
+        text-align: left;
+        color: #ff0;
+        position: absolute;
+        top: 0%;
+        left: 3.25rem;
+        transform: translate(-50%, -50%);
+    }
+    &__detail {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 0.05em;
+        line-height: 24px;
+        text-align: left;
+        color: #fff;
+    }
+    &__arrow {
+        width: 15px;
+    }
+    &__text {
+        width: calc(100% - 85% - 15px);
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 16px;
+        text-align: center;
+        color: #ff0;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        letter-spacing: 2px;
+    }
+}
+
+// entry
+.entry {
+    margin-bottom: 80px;
+    &__img {
+        width: 290px;
+        height: 170px;
+        margin: 0 auto 80px;
+    }
 
 }
+
+// premium
+.premium {
+    margin-bottom: 80px;
+    &__title {
+        font-family: Galvji;
+        font-weight: normal;
+        font-size: 52px;
+        letter-spacing: 0.02em;
+        line-height: 54px;
+        text-align: left;
+        color: #ff0;
+        margin-bottom: 50px;
+    }
+    &__text {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        line-height: 24px;
+        text-align: left;
+        color: #fff;     
+        width: fit-content;
+        margin: 0 auto 50px;
+    }
+    &__img {
+        width: 350px;
+        height: 170px;
+        margin: 0 auto 0px;
+    }
+}
+
+// strength
+.strength {
+    margin-bottom: 80px;
+    &__title {
+        font-family: Galvji;
+        font-weight: normal;
+        font-size: 52px;
+        letter-spacing: 0.02em;
+        line-height: 54px;
+        text-align: center;
+        color: #ff0;
+        margin-bottom: 50px;
+    }
+    &__it {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 0.05em;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        margin: 0 auto 50px;
+    }
+    &__content:not(:last-child) {
+        margin-bottom: 60px;
+    }
+    &__subTitle {
+        font-family: Galvji;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+        line-height: 17px;
+        text-align: left;
+        color: #ff0;
+        background-color: rgba($color: #fff, $alpha: 0.35);
+        padding: 15px 30px;
+        width: fit-content;
+        margin-bottom: 30px;
+    }
+    &__subTitle.white {
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+    &__subTitle.right {
+        background-color: rgba($color: #000000, $alpha: 0.0);
+        width: calc(100% - 0px);
+        padding: 0;
+        text-align: right;
+        span{
+            display: inline-block;
+            width: fit-content;
+            background-color: rgba($color: #fff, $alpha: 0.35);
+            padding: 10px 30px;
+        }
+    }
+    &__subTitle--big {
+        font-size: 48px;
+        color: #ff0;
+    }
+    &__text {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        line-height: 22px;
+        text-align: left;
+        color: #fff;
+        padding: 0 40px;
+    }
+}
+
+// その他にも、集客、求人の環境が整っています。
+.attract {
+    margin-bottom: 80px;
+    &__word {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 0.05em;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 80px;
+    }
+    &__content:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    &__label {
+        font-family: "Hiragino Sans";
+        font-weight: bold;
+        font-size: 15px;
+        letter-spacing: 0.05em;
+        line-height: 15px;
+        text-align: left;
+        color: #fff;  
+        padding: 15px 30px;
+        width: calc(100% - 110px);
+        margin-bottom: 20px;
+        background-color: rgba($color: #fff, $alpha: 0.35);    
+    }
+    &__img {
+        width: 280px;
+        margin: 0 auto 20px;
+    }
+    &__text {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        line-height: 22px;
+        text-align: left;
+        color: #fff;    
+        width: calc(100% - 70px);
+        margin: 0 auto;    
+    }
+}
+
+
 
 
 // こんな想いありませんか？
