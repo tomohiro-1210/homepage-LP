@@ -504,6 +504,36 @@ a {
   text-align: center;
   color: #fff;
 }
+.hope__top:first-child {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 35px;
+}
+.hope__top:first-child:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+}
+.hope__top:first-child:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  transform: rotate(45deg);
+}
 .hope__head {
   font-family: "Hiragino Sans";
   font-weight: normal;
@@ -575,6 +605,151 @@ a {
   height: 100px;
 }
 
+.why {
+  margin-bottom: 80px;
+}
+.why__title {
+  width: 324px;
+  height: 69px;
+  margin: 0 auto 40px;
+}
+.why__img {
+  width: 320px;
+  height: 230px;
+  margin: 0 auto 40px;
+}
+.why__catch {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 80px;
+}
+.why__top {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+}
+.why__top:not(:last-child) {
+  margin-bottom: 10px;
+}
+.why__top:first-child {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 10px;
+  padding: 0 35px;
+}
+.why__top:first-child:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+}
+.why__top:first-child:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  transform: rotate(45deg);
+}
+.why__head {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  text-align: center;
+  color: #ff0;
+  background-color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 10px;
+}
+.why__foot {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.why__text {
+  width: 308px;
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  text-align: left;
+  color: #fff;
+  margin: 0 auto 40px;
+}
+.why__package {
+  font-family: Galvji;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.why__item__contain {
+  width: calc(100% - 70px);
+  margin: 0 auto;
+  padding: 0 15px;
+  border-bottom: solid 1px #fff;
+}
+.why__item__label {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  text-align: center;
+  color: #ff0;
+  background-color: rgba(255, 255, 255, 0.35);
+  width: 100px;
+  margin-bottom: 15px;
+}
+.why__item__head {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.why__item__text {
+  font-family: "Hiragino Sans";
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+  padding-bottom: 25px;
+}
+.why__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .desire {
   margin-bottom: 80px;
 }
@@ -636,7 +811,7 @@ a {
   padding: 8.5px 0;
 }
 .faq__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .faq__question, .faq__answer {
   font-family: "Hiragino Sans";

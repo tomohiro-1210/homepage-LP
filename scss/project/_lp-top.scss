@@ -7,8 +7,6 @@
 // is it hope you?
 .hope {
     margin-bottom: 80px;
-    &__contain{
-    }
     &__title {
         width: 324px;
         height: 69px;
@@ -26,7 +24,34 @@
         line-height: 28px;
         text-align: center;
         color: #fff;
-
+    }
+    &__top:first-child {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0 35px;
+    }  
+    &__top:first-child:before {  
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        width: 2px;
+        height: 100%;
+        background: #fff;
+        border-radius: 3px;
+        transform: rotate(-45deg);
+    }
+    &__top:first-child:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background: #fff;
+        border-radius: 3px;
+        transform: rotate(45deg);
     }
     &__head {
         font-family: "Hiragino Sans";
@@ -66,9 +91,6 @@
         margin: 0 auto 40px;
 
     }
-    &__list {
-    
-    }
     &__item:not(:last-child) {
         margin-bottom: 20px;
     }
@@ -104,9 +126,153 @@
         width: 100px;
         height: 100px;
     }
-
 }
 
+// is it hope you?
+.why {
+    margin-bottom: 80px;
+    &__title {
+        width: 324px;
+        height: 69px;
+        margin: 0 auto 40px;
+    }
+    &__img {
+        width: 320px;
+        height: 230px;
+        margin: 0 auto 40px;
+    }
+    &__catch {
+        width: fit-content;
+        margin: 0 auto 80px;
+    }
+    &__top {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 0.05em;
+        line-height: 28px;
+        text-align: center;
+        color: #fff;
+    }
+    &__top:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    &__top:first-child {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto 10px;
+        padding: 0 35px;
+    }  
+    &__top:first-child:before {  
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        width: 2px;
+        height: 100%;
+        background: #fff;
+        border-radius: 3px;
+        transform: rotate(-45deg);
+    }
+    &__top:first-child:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background: #fff;
+        border-radius: 3px;
+        transform: rotate(45deg);
+    }
+    &__head {
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 0.05em;
+        line-height: 28px;
+        text-align: center;
+        color: #ff0;
+        background-color: rgba($color: #fff, $alpha: 0.35);
+        margin-bottom: 10px;
+    }
+    &__foot{
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 0.05em;
+        line-height: 25px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    &__text{
+        width: 308px;
+        font-family: "Hiragino Sans";
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        line-height: 28px;
+        text-align: left;
+        color: #fff;
+        margin: 0 auto 40px;
+
+    }
+    &__package{
+        font-family: Galvji;
+        font-weight: bold;
+        font-size: 25px;
+        letter-spacing: 0.02em;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    &__item{
+        &__contain {
+            width: calc(100% - 70px);
+            margin: 0 auto;
+            padding: 0 15px;
+            border-bottom: solid 1px #fff;
+        }
+        &__label {
+            font-family: "Hiragino Sans";
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            line-height: 28px;
+            text-align: center;
+            color: #ff0;
+            background-color: rgba($color: #fff, $alpha: 0.35);
+            width: 100px;
+            margin-bottom: 15px;
+        }
+        &__head {
+            font-family: "Hiragino Sans";
+            font-weight: normal;
+            font-size: 20px;
+            letter-spacing: 0.05em;
+            line-height: 28px;
+            text-align: left;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        &__text {
+            font-family: "Hiragino Sans";
+            font-weight: normal;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            line-height: 24px;
+            text-align: left;
+            color: #fff;
+            padding-bottom: 25px;
+        }
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+}
 
 
 // こんな想いありませんか？
@@ -175,7 +341,7 @@
         padding: 8.5px 0;
     }
     &__item:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     &__question,
     &__answer {
