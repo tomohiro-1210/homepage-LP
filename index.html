@@ -98,8 +98,42 @@
             </div><!-- /スマホメニュー -->
 
             <!-- fv -->
-            <div class="fv"></div>
+            <div class="fv">
+                <div class="fv__area">
+                    <div class="fv__img">
+                        <img src="./assets/img/fv-roppongi.png" alt="六本木">
+                    </div>
+                    <div class="fv__arrow">
+                        <img src="./assets/img/fv-scroll.png" alt="scroll">
+                    </div>
+                </div>
+            </div>
             <!-- /fv -->
+
+            <!-- catch -->
+            <div class="catch">
+                <div class="catch__contain">
+                    <h2 class="catch__title">集客・求人<br>
+                        専門サイト制作
+                    </h2>
+                    <div class="catch__price">
+                        <span class="catch__price--txt">初期費用</span>
+                        <span class="catch__price--number">49,500</span>
+                        <span class="catch__price--yen">円</span>
+                    </div>
+                    <div class="catch__price">
+                        <span class="catch__price--txt">月額</span>
+                        <span class="catch__price--number">16,500</span>
+                        <span class="catch__price--yen">円</span>
+                    </div>
+                    <div class="catch__month">
+                        <span>着手1ヶ月で</span>納品いたします！
+                    </div>
+                    <p class="catch__plan">六本木の法人限定</p>
+                    <p class="catch__plan -red">2024/02/20<span>までの</span></p>
+                    <p class="catch__plan">限定料金&限定プラン</p>
+                </div>
+            </div><!-- /catch -->
 
             <!-- こんな想いありませんか？ -->
             <section class="desire" id="desire">
@@ -582,7 +616,65 @@
                     <div class="follow-me__btn follow-me__btn--instagram"><a href="#"><img src="./assets/img/sns-instagram.png" alt="instagram">Instagram</a></div>
                 </div>
                 <!-- フォーム -->
-                <form action="POST" class="entry-form">ここにフォームが入ります</form>
+                <form method="post" action="mail.php" class="entry__form">
+                    <div class="entry__form__radio">
+                        <div class="entry__form__inputitems">
+                            <p class="entry__form__inputitem">応募種別*</p>
+                            <label class="entry__form__label">
+                                <input type="radio" name="applicationType" value="BtoB" required> BtoB
+                            </label>
+                            <label class="entry__form__label">
+                                <input type="radio" name="applicationType" value="BtoC" required> BtoC
+                            </label>
+                        </div>
+                        <div class="entry__form__inputitems">
+                            <p class="entry__form__inputitem">希望プラン*</p>
+                            <label class="entry__form__label">
+                                <input type="radio" name="applicationType" value="スタンダード" required> スタンダード
+                            </label>
+                            <label class="entry__form__label">
+                                <input type="radio" name="applicationType" value="プレミアム" required> プレミアム
+                            </label>
+                        </div>
+                        <div class="entry__form__inputitems">
+                            <p class="entry__form__inputitem">ご応募内容*</p>
+                            <label class="entry__form__label">
+                                <input type="radio" name="applicationType" value="開発依頼" required> 開発依頼
+                            </label>
+                            <label class="entry__form__label">
+                                <input type="radio" name="applicationType" value="面接希望" required> 面接希望
+                            </label>
+                        </div>
+                    </div>
+                
+                    <p for="会社名" class="entry__form__name">会社名*</p>
+                    <input type="text" id="会社名" name="会社名" class="entry__form__textbox">
+                
+                    <p for="担当者名" class="entry__form__name">担当者名*</p>
+                    <input type="text" id="担当者名" name="担当者名" class="entry__form__textbox">
+                
+                    <p for="フリガナ" class="entry__form__name">フリガナ*</p>
+                    <input type="text" id="フリガナ" name="フリガナ" class="entry__form__textbox">
+                
+                    <p for="WebサイトURL" class="entry__form__name">WebサイトURL</p>
+                    <input type="text" id="WebサイトURL" name="WebサイトURL" class="entry__form__textbox">
+                
+                    <p for="メールアドレス" class="entry__form__name">メールアドレス*</p>
+                    <input type="text" id="メールアドレス" name="メールアドレス" class="entry__form__textbox">
+                
+                    <p for="お電話番号" class="entry__form__name">お電話番号*</p>
+                    <input type="text" id="お電話番号" name="お電話番号" class="entry__form__textbox">
+                
+                    <p for="都道府県" class="entry__form__name">都道府県*</p>
+                    <input type="text" id="都道府県" name="都道府県" class="entry__form__textbox">
+                
+                    <p for="備考" class="entry__form__name">備考</p>
+                    <textarea name="text" id="text" cols="30" placeholder="ご希望日時などありましたらご記入ください。" rows="10" class="entry__form__textarea"></textarea>
+                    
+                    <p class="entry__form__button">
+                        <button type="submit">＞　確　認</button>
+                    </p>
+                </form>
             </section><!-- /entry -->
 
             <!-- company -->
