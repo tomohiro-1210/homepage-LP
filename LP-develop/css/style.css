@@ -110,17 +110,6 @@ a {
   text-decoration: underline;
 }
 
-.error-text {
-  font-family: "Hiragino Sans";
-  font-weight: normal;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-  line-height: 21px;
-  text-align: left;
-  color: #ff0000;
-  margin-bottom: 15px;
-}
-
 .induction {
   width: 100%;
   display: flex;
