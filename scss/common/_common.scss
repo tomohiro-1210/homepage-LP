@@ -25,7 +25,7 @@ a{
 .mark{
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 15px;
     text-align: left;
     color: #fff;
     -webkit-text-stroke: 1px #F7F7DC;
@@ -42,6 +42,8 @@ a{
     align-items: center;
     position: fixed;
     bottom: 0;
+    max-width: 420px;
+    margin: 0 auto;
     &__button {
         width: 50%;
         border: solid 1px #B4CCF8;

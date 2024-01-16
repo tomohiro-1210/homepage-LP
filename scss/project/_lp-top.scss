@@ -22,7 +22,7 @@
 
 // 集客・求人専門サイト制作
 .catch {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__contain {
         width: calc(100% - 40px);
         margin: 0 auto;
@@ -109,7 +109,7 @@
 
 // is it hope you?
 .hope {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__title {
         width: 324px;
         height: 69px;
@@ -233,7 +233,7 @@
 
 // is it hope you?
 .why {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__title {
         width: 324px;
         height: 69px;
@@ -340,7 +340,7 @@
         }
         &__label {
             font-family: "Hiragino Sans";
-            font-weight: normal;
+            font-weight: bold;
             font-size: 14px;
             letter-spacing: 0.05em;
             line-height: 28px;
@@ -378,7 +378,7 @@
 
 // flow
 .flow {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__contain {
         display: flex;
         justify-content: space-between;
@@ -440,7 +440,7 @@
 
 // entry
 .entry {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__img {
         width: 290px;
         height: 170px;
@@ -451,7 +451,7 @@
 
 // premium
 .premium {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__title {
         font-family: Galvji;
         font-weight: normal;
@@ -482,7 +482,7 @@
 
 // strength
 .strength {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__title {
         font-family: Galvji;
         font-weight: normal;
@@ -554,7 +554,7 @@
 
 // その他にも、集客、求人の環境が整っています。
 .attract {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__word {
         font-family: "Hiragino Sans";
         font-weight: normal;
@@ -600,7 +600,7 @@
 
 // 納品までの流れはこちらです
 .development {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__contain {
         width: calc(100% - 44px);
         margin: 0 auto;
@@ -675,6 +675,9 @@
         border-radius: 3px;
         transform: rotate(30deg);
     }
+    &__text.-no3::before {  
+        top: 95%;
+    }
     &__text.no-arrow {
         // 矢印関連
         border-left: none;  
@@ -698,7 +701,7 @@
 .plan{
     border-top: solid 2px #fff;
     padding-top: 20px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__contain{
         width: calc(100% - 30px);
         margin: 0 auto;
@@ -778,7 +781,7 @@
 
 // こんな想いありませんか？
 .desire {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__wrapper{
         margin: 0 auto;
     }
@@ -826,7 +829,7 @@
 
 // よくある質問
 .faq {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__list{
         max-width: 350px;
         padding: 0 20px;
@@ -870,7 +873,7 @@
 
 // entry
 .entry {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__form {
         width: calc(100% - 50px);
         margin: 40px auto 0;
@@ -944,7 +947,7 @@
 
 // 会社概要
 .company {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     &__list{
         max-width: 264px;
         margin: 0 auto;

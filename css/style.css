@@ -100,7 +100,7 @@ a {
 .mark {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 15px;
   text-align: left;
   color: #fff;
   -webkit-text-stroke: 1px #F7F7DC;
@@ -117,6 +117,8 @@ a {
   align-items: center;
   position: fixed;
   bottom: 0;
+  max-width: 420px;
+  margin: 0 auto;
 }
 .induction__button {
   width: 50%;
@@ -539,7 +541,7 @@ a {
 }
 
 .catch {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .catch__contain {
   width: calc(100% - 40px);
@@ -622,7 +624,7 @@ a {
 }
 
 .hope {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .hope__title {
   width: 324px;
@@ -746,7 +748,7 @@ a {
 }
 
 .why {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .why__title {
   width: 324px;
@@ -856,7 +858,7 @@ a {
 }
 .why__item__label {
   font-family: "Hiragino Sans";
-  font-weight: normal;
+  font-weight: bold;
   font-size: 14px;
   letter-spacing: 0.05em;
   line-height: 28px;
@@ -891,7 +893,7 @@ a {
 }
 
 .flow {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .flow__contain {
   display: flex;
@@ -953,7 +955,7 @@ a {
 }
 
 .entry {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .entry__img {
   width: 290px;
@@ -962,7 +964,7 @@ a {
 }
 
 .premium {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .premium__title {
   font-family: Galvji;
@@ -994,7 +996,7 @@ a {
 }
 
 .strength {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .strength__title {
   font-family: Galvji;
@@ -1069,7 +1071,7 @@ a {
 }
 
 .attract {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .attract__word {
   font-family: "Hiragino Sans";
@@ -1114,7 +1116,7 @@ a {
 }
 
 .development {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .development__contain {
   width: calc(100% - 44px);
@@ -1177,6 +1179,9 @@ a {
   border-radius: 3px;
   transform: rotate(30deg);
 }
+.development__text.-no3::before {
+  top: 95%;
+}
 .development__text.no-arrow {
   border-left: none;
   position: static;
@@ -1196,7 +1201,7 @@ a {
 .plan {
   border-top: solid 2px #fff;
   padding-top: 20px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .plan__contain {
   width: calc(100% - 30px);
@@ -1271,7 +1276,7 @@ a {
 }
 
 .desire {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .desire__wrapper {
   margin: 0 auto;
@@ -1314,7 +1319,7 @@ a {
 }
 
 .faq {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .faq__list {
   max-width: 350px;
@@ -1355,7 +1360,7 @@ a {
 }
 
 .entry {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .entry__form {
   width: calc(100% - 50px);
@@ -1426,7 +1431,7 @@ a {
 }
 
 .company {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .company__list {
   max-width: 264px;
