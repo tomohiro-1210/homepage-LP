@@ -623,61 +623,78 @@
                         <div class="follow-me__btn follow-me__btn--instagram"><a href="https://www.instagram.com/link___japan"><img src="./assets/img/sns-instagram.png" alt="instagram">Instagram</a></div>
                     </div>
                 <!-- フォーム -->
-                <form method="post" action="mail.php" class="entry__form box wow animated fadeInUp" id="contact">
+                <form method="post" action="contact-confirm.php" class="entry__form box wow animated fadeInUp" id="contact">
                     <div class="entry__form__radio">
+                        <p class="error-text" style="text-align: center; font-size: 18px;"><?php echo  $total;?></p>
+                        <!-- 応募種別 -->
                         <div class="entry__form__inputitems">
                             <p class="entry__form__inputitem">応募種別*</p>
                             <label class="entry__form__label">
-                                <input type="radio" name="applicationType" value="BtoB" required> BtoB
+                                <input type="radio" name="applicationType" value="BtoB" <?php echo (isset($applicationType) && $applicationType === 'BtoB') ? 'checked' : ''; ?> required> BtoB
                             </label>
                             <label class="entry__form__label">
-                                <input type="radio" name="applicationType" value="BtoC" required> BtoC
+                                <input type="radio" name="applicationType" value="BtoC" <?php echo (isset($applicationType) && $applicationType === 'BtoC') ? 'checked' : ''; ?> required> BtoC
                             </label>
                         </div>
+  
+                        <!-- 希望プラン -->
                         <div class="entry__form__inputitems">
                             <p class="entry__form__inputitem">希望プラン*</p>
                             <label class="entry__form__label">
-                                <input type="radio" name="hope-plan" value="スタンダード" required> スタンダード
+                                <input type="radio" name="hope_plan" value="スタンダード" <?php echo (isset($hope_plan) && $hope_plan === 'スタンダード') ? 'checked' : ''; ?> required> スタンダード
                             </label>
                             <label class="entry__form__label">
-                                <input type="radio" name="hope-plan" value="プレミアム" required> プレミアム
+                                <input type="radio" name="hope_plan" value="プレミアム" <?php echo (isset($hope_plan) && $hope_plan === 'プレミアム') ? 'checked' : ''; ?> required> プレミアム
                             </label>
                         </div>
+
+                        <!-- ご応募内容 -->
                         <div class="entry__form__inputitems">
                             <p class="entry__form__inputitem">ご応募内容*</p>
                             <label class="entry__form__label">
-                                <input type="radio" name="apply" value="開発依頼" required> 開発依頼
+                                <input type="radio" name="apply" value="開発依頼" <?php echo (isset($apply) && $apply === '開発依頼') ? 'checked' : ''; ?> required> 開発依頼
                             </label>
                             <label class="entry__form__label">
-                                <input type="radio" name="apply" value="面接希望" required> 面接希望
+                                <input type="radio" name="apply" value="面接希望" <?php echo (isset($apply) && $apply === '面接希望') ? 'checked' : ''; ?> required> 面接希望
                             </label>
                         </div>
+
+
                     </div>
                 
-                    <p for="会社名" class="entry__form__name">会社名*</p>
-                    <input type="text" id="会社名" name="会社名" class="entry__form__textbox">
+                    <!-- 会社名 -->
+                    <p for="company_name" class="entry__form__name">会社名*</p>
+                    <input type="text" id="company_name" name="company_name" class="entry__form__textbox" value="<?php echo isset($company_name) ? htmlspecialchars($company_name) : ''; ?>">
                 
-                    <p for="担当者名" class="entry__form__name">担当者名*</p>
-                    <input type="text" id="担当者名" name="担当者名" class="entry__form__textbox">
-                
-                    <p for="フリガナ" class="entry__form__name">フリガナ*</p>
-                    <input type="text" id="フリガナ" name="フリガナ" class="entry__form__textbox">
-                
-                    <p for="WebサイトURL" class="entry__form__name">WebサイトURL</p>
-                    <input type="text" id="WebサイトURL" name="WebサイトURL" class="entry__form__textbox">
-                
-                    <p for="メールアドレス" class="entry__form__name">メールアドレス*</p>
-                    <input type="text" id="メールアドレス" name="メールアドレス" class="entry__form__textbox">
-                
-                    <p for="お電話番号" class="entry__form__name">お電話番号*</p>
-                    <input type="text" id="お電話番号" name="お電話番号" class="entry__form__textbox">
-                
-                    <p for="都道府県" class="entry__form__name">都道府県*</p>
-                    <input type="text" id="都道府県" name="都道府県" class="entry__form__textbox">
-                
-                    <p for="備考" class="entry__form__name">備考</p>
-                    <textarea name="text" id="text" cols="30" placeholder="ご希望日時などありましたらご記入ください。" rows="10" class="entry__form__textarea"></textarea>
-                    
+                    <!-- 担当者名 -->
+                    <p for="pic" class="entry__form__name">担当者名*</p>
+                    <input type="text" id="pic" name="pic" class="entry__form__textbox" value="<?php echo isset($pic) ? htmlspecialchars($pic) : ''; ?>">
+
+                    <!-- フリガナ -->
+                    <p for="furigana" class="entry__form__name">フリガナ*</p>
+                    <input type="text" id="furigana" name="furigana" class="entry__form__textbox" value="<?php echo isset($furigana) ? htmlspecialchars($furigana) : ''; ?>">
+
+                    <!-- WebサイトURL -->
+                    <p for="url" class="entry__form__name">WebサイトURL</p>
+                    <input type="text" id="url" name="url" class="entry__form__textbox" value="<?php echo isset($url) ? htmlspecialchars($url) : ''; ?>">
+
+                    <!-- メールアドレス -->
+                    <p for="mail_address" class="entry__form__name">メールアドレス*</p>
+                    <input type="text" id="mail_address" name="mail_address" class="entry__form__textbox" value="<?php echo isset($mail_address) ? htmlspecialchars($mail_address) : ''; ?>">
+
+                    <!-- お電話番号 -->
+                    <p for="tel" class="entry__form__name">お電話番号*</p>
+                    <input type="text" id="tel" name="tel" class="entry__form__textbox" value="<?php echo isset($tel) ? htmlspecialchars($tel) : ''; ?>">
+
+                    <!-- 都道府県 -->
+                    <p for="prefectures" class="entry__form__name">都道府県*</p>
+                    <input type="text" id="prefectures" name="prefectures" class="entry__form__textbox" value="<?php echo isset($prefectures) ? htmlspecialchars($prefectures) : ''; ?>">
+
+                    <!-- 備考 -->
+                    <p for="remarks" class="entry__form__name">備考</p>
+                    <textarea name="remarks" id="remarks" cols="30" placeholder="ご希望日時などありましたらご記入ください。" rows="10" class="entry__form__textarea"><?php echo isset($remarks) ? htmlspecialchars($remarks) : ''; ?></textarea>
+
+                    <!-- 送信ボタン -->
                     <p class="entry__form__button">
                         <button type="submit">＞　確　認</button>
                     </p>

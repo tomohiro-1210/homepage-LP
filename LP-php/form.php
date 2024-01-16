@@ -14,87 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $tel = $_POST['tel']; //電話番号
     $prefectures = $_POST['prefectures']; //都道府県
     $remarks = $_POST['remarks']; //備考
-
-    // 応募種別が入っていないときの処理
-    if(!empty($applicationType) && !empty($applicationType)){
-        $applicationType_total = 1;
-    }else{
-        // エラー出力文
-        $applicationType_error = '応募種別が選択されていません';
-    }
-
-    // 希望プランが入っていないときの処理
-    if(!empty($hope_plan) && !empty($hope_plan)){
-        $hope_plan_total = 1;
-    }else{
-        // エラー出力文
-        $hope_plan_error = '希望プランが選択されていません';
-    }
-
-    // ご応募内容が入っていないときの処理
-    if(!empty($apply) && !empty($apply)){
-        $apply_total = 1;
-    }else{
-        // エラー出力文
-        $apply_error = 'ご応募内容が選択されていません';
-    }
-
-    // 会社名が入っていない時の処理
-    if(!empty($company_name) && !empty($company_name)){
-        $company_name_total = 1;
-    }else{
-        // エラー出力文
-        $company_name_error = '会社名が入力されていません';
-    }
-
-    // 担当者名が入っていない時の処理
-    if(!empty($pic) && !empty($pic)){
-        $pic_total = 1;
-    }else{
-        // エラー出力文
-        $pic_error = '担当者名が入力されていません';
-    }
-
-    // フリガナが入っていない時の処理
-    if(!empty($furigana) && !empty($furigana)){
-        $furigana_total = 1;
-    }else{
-        // エラー出力文
-        $furigana_error = 'フリガナが入力されていません';
-    }
-
-    // メールアドレスが入っていない時の処理
-    if(!empty($mail_address) && !empty($mail_address)){
-        $mail_address_total = 1;
-    }else{
-        // エラー出力文
-        $mail_address_error = 'メールアドレスが入力されていません';
-    }
-
-    // 電話番号が入っていない時の処理
-    if(!empty($tel) && !empty($tel)){
-        $tel_total = 1;
-    }else{
-        // エラー出力文
-        $tel_error = '電話番号が入力されていません';
-    }
-
-    // 都道府県が入っていない時の処理
-    if(!empty($prefectures) && !empty($prefectures)){
-        $prefectures_total = 1;
-    }else{
-        // エラー出力文
-        $prefectures_error = '都道府県が入力されていません';
-    }
-
-    // エラーのトータル表示
-    $no_error = $applicationType_total + $hope_plan_total + $apply_total + $company_name_total + $pic_total + $furigana_total + $mail_address_total + $tel_total + $prefectures_total;
-    $empty_total = 9 - $no_error;
-
-
-
-
-    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -225,72 +145,78 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         いずれかで必要事項記入の上、送信をお願いします。</span>
                 </h2>
                 <!-- フォーム -->
-                <!-- <form method="post" action="mail.php" class="entry__form box wow animated fadeInUp" id="contact"> -->
-                <form method="post" class="entry__form box wow animated fadeInUp" id="contact">
+                <form method="post" action="contact-confirm.php" class="entry__form box wow animated fadeInUp" id="contact">
                     <div class="entry__form__radio">
+                        <p class="error-text" style="text-align: center; font-size: 18px;"><?php echo  $total;?></p>
+                        <!-- 応募種別 -->
                         <div class="entry__form__inputitems">
                             <p class="entry__form__inputitem">応募種別*</p>
                             <label class="entry__form__label">
-                                <input type="radio" name="applicationType" value="BtoB" required> BtoB
+                                <input type="radio" name="applicationType" value="BtoB" <?php echo (isset($applicationType) && $applicationType === 'BtoB') ? 'checked' : ''; ?> required> BtoB
                             </label>
                             <label class="entry__form__label">
-                                <input type="radio" name="applicationType" value="BtoC" required> BtoC
+                                <input type="radio" name="applicationType" value="BtoC" <?php echo (isset($applicationType) && $applicationType === 'BtoC') ? 'checked' : ''; ?> required> BtoC
                             </label>
                         </div>
-                        <p class="error-text"><?php echo  $applicationType_error;?></p>
-
+  
+                        <!-- 希望プラン -->
                         <div class="entry__form__inputitems">
                             <p class="entry__form__inputitem">希望プラン*</p>
                             <label class="entry__form__label">
-                                <input type="radio" name="hope_plan" value="スタンダード" required> スタンダード
+                                <input type="radio" name="hope_plan" value="スタンダード" <?php echo (isset($hope_plan) && $hope_plan === 'スタンダード') ? 'checked' : ''; ?> required> スタンダード
                             </label>
                             <label class="entry__form__label">
-                                <input type="radio" name="hope_plan" value="プレミアム" required> プレミアム
+                                <input type="radio" name="hope_plan" value="プレミアム" <?php echo (isset($hope_plan) && $hope_plan === 'プレミアム') ? 'checked' : ''; ?> required> プレミアム
                             </label>
                         </div>
 
+                        <!-- ご応募内容 -->
                         <div class="entry__form__inputitems">
                             <p class="entry__form__inputitem">ご応募内容*</p>
                             <label class="entry__form__label">
-                                <input type="radio" name="apply" value="開発依頼" required> 開発依頼
+                                <input type="radio" name="apply" value="開発依頼" <?php echo (isset($apply) && $apply === '開発依頼') ? 'checked' : ''; ?> required> 開発依頼
                             </label>
                             <label class="entry__form__label">
-                                <input type="radio" name="apply" value="面接希望" required> 面接希望
+                                <input type="radio" name="apply" value="面接希望" <?php echo (isset($apply) && $apply === '面接希望') ? 'checked' : ''; ?> required> 面接希望
                             </label>
                         </div>
 
+
                     </div>
                 
+                    <!-- 会社名 -->
                     <p for="company_name" class="entry__form__name">会社名*</p>
-                    <input type="text" id="company_name" name="company_name" class="entry__form__textbox">
-                    <p class="error-text"><?php echo  $company_name_error;?></p>
+                    <input type="text" id="company_name" name="company_name" class="entry__form__textbox" value="<?php echo isset($company_name) ? htmlspecialchars($company_name) : ''; ?>">
                 
+                    <!-- 担当者名 -->
                     <p for="pic" class="entry__form__name">担当者名*</p>
-                    <input type="text" id="pic" name="pic" class="entry__form__textbox">
-                    <p class="error-text"><?php echo  $pic_error;?></p>
-                
+                    <input type="text" id="pic" name="pic" class="entry__form__textbox" value="<?php echo isset($pic) ? htmlspecialchars($pic) : ''; ?>">
+
+                    <!-- フリガナ -->
                     <p for="furigana" class="entry__form__name">フリガナ*</p>
-                    <input type="text" id="furigana" name="furigana" class="entry__form__textbox">
-                    <p class="error-text"><?php echo  $furigana_error;?></p>
-                
+                    <input type="text" id="furigana" name="furigana" class="entry__form__textbox" value="<?php echo isset($furigana) ? htmlspecialchars($furigana) : ''; ?>">
+
+                    <!-- WebサイトURL -->
                     <p for="url" class="entry__form__name">WebサイトURL</p>
-                    <input type="text" id="url" name="url" class="entry__form__textbox">
-                
+                    <input type="text" id="url" name="url" class="entry__form__textbox" value="<?php echo isset($url) ? htmlspecialchars($url) : ''; ?>">
+
+                    <!-- メールアドレス -->
                     <p for="mail_address" class="entry__form__name">メールアドレス*</p>
-                    <input type="text" id="mail_address" name="mail_address" class="entry__form__textbox">
-                    <p class="error-text"><?php echo  $mail_address_error;?></p>
-                
+                    <input type="text" id="mail_address" name="mail_address" class="entry__form__textbox" value="<?php echo isset($mail_address) ? htmlspecialchars($mail_address) : ''; ?>">
+
+                    <!-- お電話番号 -->
                     <p for="tel" class="entry__form__name">お電話番号*</p>
-                    <input type="text" id="tel" name="tel" class="entry__form__textbox">
-                    <p class="error-text"><?php echo  $tel_error;?></p>
-                
+                    <input type="text" id="tel" name="tel" class="entry__form__textbox" value="<?php echo isset($tel) ? htmlspecialchars($tel) : ''; ?>">
+
+                    <!-- 都道府県 -->
                     <p for="prefectures" class="entry__form__name">都道府県*</p>
-                    <input type="text" id="prefectures" name="prefectures" class="entry__form__textbox">
-                    <p class="error-text"><?php echo  $prefectures_error;?></p>
-                
+                    <input type="text" id="prefectures" name="prefectures" class="entry__form__textbox" value="<?php echo isset($prefectures) ? htmlspecialchars($prefectures) : ''; ?>">
+
+                    <!-- 備考 -->
                     <p for="remarks" class="entry__form__name">備考</p>
-                    <textarea name="remarks" id="remarks" cols="30" placeholder="ご希望日時などありましたらご記入ください。" rows="10" class="entry__form__textarea"></textarea>
-                    
+                    <textarea name="remarks" id="remarks" cols="30" placeholder="ご希望日時などありましたらご記入ください。" rows="10" class="entry__form__textarea"><?php echo isset($remarks) ? htmlspecialchars($remarks) : ''; ?></textarea>
+
+                    <!-- 送信ボタン -->
                     <p class="entry__form__button">
                         <button type="submit">＞　確　認</button>
                     </p>

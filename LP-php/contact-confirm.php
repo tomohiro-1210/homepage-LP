@@ -1,10 +1,158 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // 確認欄から受け取ったデータを取得する
+    // 応募種別
+    $applicationType = isset($_POST["applicationType"]) ? htmlspecialchars($_POST["applicationType"]) : "";
+
+    // 希望プラン
+    $hope_plan = isset($_POST["hope_plan"]) ? htmlspecialchars($_POST["hope_plan"]) : "";
+
+    // ご応募内容
+    $apply = isset($_POST["apply"]) ? htmlspecialchars($_POST["apply"]) : "";
+
+    // 会社名
+    $company_name = isset($_POST["company_name"]) ? htmlspecialchars($_POST["company_name"]) : "";
+
+    // 担当者名
+    $pic = isset($_POST["pic"]) ? htmlspecialchars($_POST["pic"]) : "";
+
+    // フリガナ
+    $furigana = isset($_POST["furigana"]) ? htmlspecialchars($_POST["furigana"]) : "";
+
+    // WebサイトURL
+    $url = isset($_POST["url"]) ? htmlspecialchars($_POST["url"]) : "";
+
+    // メールアドレス
+    $mail_address = isset($_POST["mail_address"]) ? htmlspecialchars($_POST["mail_address"]) : "";
+
+    // 電話番号
+    $tel = isset($_POST["tel"]) ? htmlspecialchars($_POST["tel"]) : "";
+
+    // 都道府県
+    $prefectures = isset($_POST["prefectures"]) ? htmlspecialchars($_POST["prefectures"]) : "";
+
+    // 備考
+    $remarks = isset($_POST["remarks"]) ? htmlspecialchars($_POST["remarks"]) : "";
+
+
+    // 会社名が入っていない時の処理
+    if(!empty($company_name)){
+        $company_name_total = 1;
+    }else{
+        // エラー出力文
+        $company_name_error = '会社名が入力されていません';
+    }
+
+    // 担当者名が入っていない時の処理
+    if(!empty($pic)){
+        $pic_total = 1;
+    }else{
+        // エラー出力文
+        $pic_error = '担当者名が入力されていません';
+    }
+
+    // フリガナが入っていない時の処理
+    if(!empty($furigana)){
+        $furigana_empty_total = 1;
+    }else{
+        // エラー出力文
+        $furigana_empty_error = 'フリガナが入力されていません';
+    }
+
+    // フリガナがカタカナで入っていないかを判定する処理
+    if (preg_match("/^[ァ-ヶー]+$/u", $furigana)) {
+        $firigana_match_total = 1;
+    }else{
+        $furigana_match_error = "フリガナはカタカナで入力してください";
+    }
+
+    // メールアドレスが入っていない時の処理
+    if(!empty($mail_address)){
+        $mail_address_empty_total = 1;
+    }else{
+        // エラー出力文
+        $mail_address_empty_error = 'メールアドレスが入力されていません';
+    }
+
+    // メールアドレスの形式が正しいかチェック
+    if (filter_var($mail_address, FILTER_VALIDATE_EMAIL)) {
+        $mail_address_match_total = 1;
+    }else{
+        $mail_address_match_error = "メールアドレスは正しい入力形式を使ってください";
+    }
+
+    // 電話番号が入っていない時の処理
+    if(!empty($tel)){
+        $tel_empty_total = 1;
+    }else{
+        // エラー出力文
+        $tel_empty_error = '電話番号が入力されていません';
+    }
+
+    // 電話番号が半角英数字であるかチェック
+    if (ctype_digit($tel)) {
+        $tel_match_total = 1;
+    }else{
+        // エラー出力文
+        $tel_match_error = "電話番号は半角英数字<br>(ハイフン抜き)で入力してください";
+    }
+
+    // 都道府県が入っていない時の処理
+    if(!empty($prefectures)){
+        $prefectures_total = 1;
+    }else{
+        // エラー出力文
+        $prefectures_error = '都道府県が入力されていません';
+    }
+
+    // エラーのトータル表示
+    $no_error = 
+     $company_name_total + 
+     $pic_total + 
+     $furigana_empty_total + 
+     $firigana_match_total + 
+     $mail_address_empty_total + 
+     $mail_address_match_total + 
+     $tel_empty_total + 
+     $tel_match_total + 
+     $prefectures_total;
+
+    
+    // 上記のエラーを全て足して、エラーを出すか、メールを送るかを判断している
+    if($no_error != 9){ 
+            $total_error = '入力されていない必須項目または<br>修正する項目があります<br>お問い合わせフォームに戻ってください';
+    }else {
+        $to = "express22212270@gmail.com"; // 送信先のメールアドレス
+        $subject = "お問い合わせがありました"; // メールの件名
+
+        // メール本文の作成
+        $message = "応募種別: $applicationType\n";
+        $message .= "希望プラン: $hope_plan\n";
+        $message .= "ご応募内容: $apply\n";
+        // 以下同様に各項目を追加
+
+        $headers = "From: sender@example.com"; // 送信元のメールアドレス
+
+        // メール送信
+        if (mail($to, $subject, $message, $headers)) {
+            $mail_send = "お問い合わせが送信されました。";
+        } else {
+            $mail_send = "お問い合わせの送信に失敗しました。";
+        }
+    }
+
+}
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>お問い合わせ完了</title>
+    <title>お問い合わせ内容確認</title>
 </head>
 <body>
     
@@ -107,58 +255,145 @@
         <!-- フォーム確認 -->
             <form class="contact-confirm">
 
+                <div class="error-wrap">
+                    <p class="error-text"><?php echo $company_name_error; ?></p>
+                    <p class="error-text"><?php echo $pic_error; ?></p>
+                    <p class="error-text"><?php echo $furigana_empty_error; ?></p>
+                    <p class="error-text"><?php echo $furigana_match_error; ?></p>
+                    <p class="error-text"><?php echo $mail_address_empty_error; ?></p>
+                    <p class="error-text"><?php echo $mail_address_match_error; ?></p>
+                    <p class="error-text"><?php echo $tel_empty_error; ?></p>
+                    <p class="error-text"><?php echo $tel_match_error; ?></p>
+                    <p class="error-text"><?php echo $prefectures_error; ?></p>
+                    <p class="error-text"><?php echo $total_error;?></p>
+                    <p class="error-text"><?php echo $mail_send;?></p>
+
+                </div>
+
                 <table class="contact-confirm__table">
 
                     <!-- 送信内容確認 -->
                     <p class="contact-confirm__p">送信内容確認</p>
 
+                    <!-- 応募種別 -->
+                    <tr class="contact-confirm__item">
+                        <th class="contact-confirm__title">応募種別*</th>
+                        <td class="contact-confirm__text"> <?php
+                            // LPからのデータを表示
+                            if(isset($_POST['applicationType'])) {
+                                echo htmlspecialchars($_POST['applicationType']);
+                            }
+                        ?></td>
+                    </tr><!-- /応募種別 -->
+
+                    <!-- 希望プラン -->
+                    <tr class="contact-confirm__item">
+                        <th class="contact-confirm__title">希望プラン*</th>
+                        <td class="contact-confirm__text"> <?php
+                            // LPからのデータを表示
+                            if(isset($_POST['hope_plan'])) {
+                                echo htmlspecialchars($_POST['hope_plan']);
+                            }
+                        ?></td>
+                    </tr><!-- /希望プラン -->
+
+                    <!-- ご応募内容 -->
+                    <tr class="contact-confirm__item">
+                        <th class="contact-confirm__title">ご応募内容*</th>
+                        <td class="contact-confirm__text"> <?php
+                            // LPからのデータを表示
+                            if(isset($_POST['apply'])) {
+                                echo htmlspecialchars($_POST['apply']);
+                            }
+                        ?></td>
+                    </tr><!-- /ご応募内容 -->
+
                     <!-- 会社名 -->
                     <tr class="contact-confirm__item">
                         <th class="contact-confirm__title">会社名*</th>
-                        <td class="contact-confirm__text">受け取る内容</td>
+                        <td class="contact-confirm__text"> <?php
+                            // LPからのデータを表示
+                            if(isset($_POST['company_name'])) {
+                                echo htmlspecialchars($_POST['company_name']);
+                            }
+                        ?></td>
                     </tr><!-- /会社名 -->
 
                     <!-- 担当者名 -->
                     <tr class="contact-confirm__item">
                         <th class="contact-confirm__title">担当者名*</th>
-                        <td class="contact-confirm__text">受け取る内容</td>
+                        <td class="contact-confirm__text"> <?php
+                            // LPからのデータを表示
+                            if(isset($_POST['pic'])) {
+                                echo htmlspecialchars($_POST['pic']);
+                            }
+                        ?></td>
                     </tr><!-- /担当者名 -->
 
                     <!-- フリガナ -->
                     <tr class="contact-confirm__item">
                         <th class="contact-confirm__title">フリガナ*</th>
-                        <td class="contact-confirm__text">受け取る内容</td>
+                        <td class="contact-confirm__text"> <?php
+                            // LPからのデータを表示
+                            if(isset($_POST['furigana'])) {
+                                echo htmlspecialchars($_POST['furigana']);
+                            }
+                        ?></td>
                     </tr><!-- /フリガナ -->
 
                     <!-- WebサイトURL -->
                     <tr class="contact-confirm__item">
                         <th class="contact-confirm__title">WebサイトURL</th>
-                        <td class="contact-confirm__text">受け取る内容</td>
+                        <td class="contact-confirm__text"> <?php
+                            // LPからのデータを表示
+                            if(isset($_POST['url'])) {
+                                echo htmlspecialchars($_POST['url']);
+                            }
+                        ?></td>
                     </tr><!-- /WebサイトURL -->
 
                     <!-- メールアドレス -->
                     <tr class="contact-confirm__item">
                         <th class="contact-confirm__title">メールアドレス*</th>
-                        <td class="contact-confirm__text">受け取る内容</td>
+                        <td class="contact-confirm__text"> <?php
+                            // LPからのデータを表示
+                            if(isset($_POST['mail_address'])) {
+                                echo htmlspecialchars($_POST['mail_address']);
+                            }
+                        ?></td>
                     </tr><!-- /メールアドレス -->
 
                     <!-- お電話番号 -->
                     <tr class="contact-confirm__item">
                         <th class="contact-confirm__title">お電話番号*</th>
-                        <td class="contact-confirm__text">受け取る内容</td>
+                        <td class="contact-confirm__text"> <?php
+                            // LPからのデータを表示
+                            if(isset($_POST['tel'])) {
+                                echo htmlspecialchars($_POST['tel']);
+                            }
+                        ?></td>
                     </tr><!-- /お電話番号 -->
 
                     <!-- 都道府県 -->
                     <tr class="contact-confirm__item">
                         <th class="contact-confirm__title">都道府県*</th>
-                        <td class="contact-confirm__text">受け取る内容</td>
+                        <td class="contact-confirm__text"> <?php
+                            // LPからのデータを表示
+                            if(isset($_POST['prefectures'])) {
+                                echo htmlspecialchars($_POST['prefectures']);
+                            }
+                        ?></td>
                     </tr><!-- /都道府県 -->
 
                     <!-- 備考 -->
                     <tr class="contact-confirm__item">
                         <th class="contact-confirm__title">備考</th>
-                        <td class="contact-confirm__text">改行されない問題をどうしたらいいかがわからない
-                        </td>
+                        <td class="contact-confirm__text"> <?php
+                            // LPからのデータを表示
+                            if(isset($_POST['remarks'])) {
+                                echo htmlspecialchars($_POST['remarks']);
+                            }
+                        ?></td>
                     </tr><!-- /備考 -->
 
                 </table>
