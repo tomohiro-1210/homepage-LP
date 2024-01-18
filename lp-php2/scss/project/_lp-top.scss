@@ -22,7 +22,7 @@
 
 // 集客・求人専門サイト制作
 .catch {
-    padding-bottom: 80px;
+    padding-top: 80px;
     &__contain {
         width: calc(100% - 40px);
         margin: 0 auto;
@@ -109,7 +109,7 @@
 
 // is it hope you?
 .hope {
-    padding-bottom: 80px;
+    padding-top: 80px;
     &__title {
         width: 324px;
         height: 69px;
@@ -233,7 +233,7 @@
 
 // is it hope you?
 .why {
-    padding-bottom: 80px;
+    padding-top: 80px;
     &__title {
         width: 324px;
         height: 69px;
@@ -378,7 +378,7 @@
 
 // flow
 .flow {
-    padding-bottom: 80px;
+    padding-top: 80px;
     &__contain {
         display: flex;
         justify-content: space-between;
@@ -440,7 +440,7 @@
 
 // entry
 .entry {
-    padding-bottom: 80px;
+    padding-top: 80px;
     &__img {
         width: 290px;
         height: 170px;
@@ -451,7 +451,7 @@
 
 // premium
 .premium {
-    padding-bottom: 80px;
+    padding-top: 80px;
     &__title {
         font-family: Galvji;
         font-weight: normal;
@@ -482,7 +482,7 @@
 
 // strength
 .strength {
-    padding-bottom: 80px;
+    padding-top: 80px;
     &__title {
         font-family: Galvji;
         font-weight: normal;
@@ -554,7 +554,7 @@
 
 // その他にも、集客、求人の環境が整っています。
 .attract {
-    padding-bottom: 80px;
+    padding-top: 80px;
     &__word {
         font-family: "Hiragino Sans";
         font-weight: normal;
@@ -600,7 +600,7 @@
 
 // 納品までの流れはこちらです
 .development {
-    padding-bottom: 80px;
+    padding-top: 80px;
     &__contain {
         width: calc(100% - 44px);
         margin: 0 auto;
@@ -700,8 +700,7 @@
 // プラン
 .plan{
     border-top: solid 2px #fff;
-    padding-top: 20px;
-    padding-bottom: 80px;
+    padding-top: 100px;
     &__contain{
         width: calc(100% - 30px);
         margin: 0 auto;
@@ -781,7 +780,7 @@
 
 // こんな想いありませんか？
 .desire {
-    padding-bottom: 80px;
+    padding-top: 80px;
     &__wrapper{
         margin: 0 auto;
     }
@@ -829,7 +828,7 @@
 
 // よくある質問
 .faq {
-    padding-bottom: 80px;
+    padding-top: 80px;
     &__list{
         max-width: 350px;
         padding: 0 20px;
@@ -873,7 +872,7 @@
 
 // entry
 .entry {
-    padding-bottom: 80px;
+    padding-top: 80px;
     &__form {
         width: calc(100% - 50px);
         margin: 40px auto 0;
@@ -947,6 +946,7 @@
 
 // 会社概要
 .company {
+    padding-top: 80px;
     padding-bottom: 80px;
     &__list{
         max-width: 264px;

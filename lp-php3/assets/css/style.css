@@ -110,14 +110,14 @@ a {
   text-decoration: underline;
 }
 
-.error_messe {
+.error-text {
   font-family: "Hiragino Sans";
-  font-weight: bold;
+  font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.05em;
   line-height: 21px;
-  text-align: center;
-  color: red;
+  text-align: left;
+  color: #ff0000;
   margin-bottom: 15px;
 }
 
@@ -552,7 +552,7 @@ a {
 }
 
 .catch {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 .catch__contain {
   width: calc(100% - 40px);
@@ -635,7 +635,7 @@ a {
 }
 
 .hope {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 .hope__title {
   width: 324px;
@@ -759,7 +759,7 @@ a {
 }
 
 .why {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 .why__title {
   width: 324px;
@@ -904,7 +904,7 @@ a {
 }
 
 .flow {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 .flow__contain {
   display: flex;
@@ -966,7 +966,7 @@ a {
 }
 
 .entry {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 .entry__img {
   width: 290px;
@@ -975,7 +975,7 @@ a {
 }
 
 .premium {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 .premium__title {
   font-family: Galvji;
@@ -1007,7 +1007,7 @@ a {
 }
 
 .strength {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 .strength__title {
   font-family: Galvji;
@@ -1082,7 +1082,7 @@ a {
 }
 
 .attract {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 .attract__word {
   font-family: "Hiragino Sans";
@@ -1127,7 +1127,7 @@ a {
 }
 
 .development {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 .development__contain {
   width: calc(100% - 44px);
@@ -1211,8 +1211,7 @@ a {
 
 .plan {
   border-top: solid 2px #fff;
-  padding-top: 20px;
-  padding-bottom: 80px;
+  padding-top: 100px;
 }
 .plan__contain {
   width: calc(100% - 30px);
@@ -1287,7 +1286,7 @@ a {
 }
 
 .desire {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 .desire__wrapper {
   margin: 0 auto;
@@ -1330,7 +1329,7 @@ a {
 }
 
 .faq {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 .faq__list {
   max-width: 350px;
@@ -1371,7 +1370,7 @@ a {
 }
 
 .entry {
-  padding-bottom: 80px;
+  padding-top: 80px;
 }
 .entry__form {
   width: calc(100% - 50px);
@@ -1442,6 +1441,7 @@ a {
 }
 
 .company {
+  padding-top: 80px;
   padding-bottom: 80px;
 }
 .company__list {
@@ -1517,7 +1517,7 @@ a {
   color: #000;
   border-bottom: dotted 1px #000;
   padding-bottom: 10px;
-  white-space: pre-line;
+  overflow: hidden;
 }
 .contact-confirm__text--tel {
   margin-right: 10px;

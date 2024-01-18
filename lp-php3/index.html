@@ -611,10 +611,10 @@
             </section><!-- /faq -->
 
             <!-- entry -->
-            <section class="entry" id="entry">
+            <section class="entry" id="contact">
                 <h2 class="sec-title box wow animated fadeInUp">
-                    <span class="sec-title--en">ENTRY</span>
-                    <span class="sec-title--ja">ご応募はLINE、DM、下記エントリーフォームの<br>
+                    <span class="sec-title--en">Contact</span>
+                    <span class="sec-title--ja">お問い合わせはLINE、DM、下記お問い合わせフォームの<br>
                         いずれかで必要事項記入の上、送信をお願いします。</span>
                 </h2>
                 <!-- LINE,インスタ -->
@@ -623,33 +623,33 @@
                     <div class="follow-me__btn follow-me__btn--instagram"><a href="#"><img src="./assets/img/sns-instagram.png" alt="instagram">Instagram</a></div>
                 </div>
                 <!-- フォーム -->
-                <form method="post" action="comfirm.php" class="entry__form box wow animated fadeInUp" id="contact">
+                <form method="post" action="contact-confirm.php" class="entry__form">
                     <div class="entry__form__radio">
                         <div class="entry__form__inputitems">
                             <p class="entry__form__inputitem">応募種別*</p>
                             <label class="entry__form__label">
-                                <input type="radio" name="applicationType" value="BtoB" required> BtoB
+                                <input type="radio" name="応募種別" value="BtoB" required> BtoB
                             </label>
                             <label class="entry__form__label">
-                                <input type="radio" name="applicationType" value="BtoC" required> BtoC
+                                <input type="radio" name="応募種別" value="BtoC" required> BtoC
                             </label>
                         </div>
                         <div class="entry__form__inputitems">
                             <p class="entry__form__inputitem">希望プラン*</p>
                             <label class="entry__form__label">
-                                <input type="radio" name="hope-plan" value="スタンダード" required> スタンダード
+                                <input type="radio" name="希望プラン" value="スタンダード" required> スタンダード
                             </label>
                             <label class="entry__form__label">
-                                <input type="radio" name="hope-plan" value="プレミアム" required> プレミアム
+                                <input type="radio" name="希望プラン" value="プレミアム" required> プレミアム
                             </label>
                         </div>
                         <div class="entry__form__inputitems">
                             <p class="entry__form__inputitem">ご応募内容*</p>
                             <label class="entry__form__label">
-                                <input type="radio" name="apply" value="開発依頼" required> 開発依頼
+                                <input type="radio" name="ご応募内容" value="開発依頼" required> 開発依頼
                             </label>
                             <label class="entry__form__label">
-                                <input type="radio" name="apply" value="面接希望" required> 面接希望
+                                <input type="radio" name="ご応募内容" value="面接希望" required> 面接希望
                             </label>
                         </div>
                     </div>
@@ -669,7 +669,7 @@
                     <p for="メールアドレス" class="entry__form__name">メールアドレス*</p>
                     <input type="text" id="メールアドレス" name="メールアドレス" class="entry__form__textbox">
                 
-                    <p for="お電話番号" class="entry__form__name">お電話番号*</p>
+                    <p for="お電話番号" class="entry__form__name">お電話番号(ハイフン抜き)*</p>
                     <input type="text" id="お電話番号" name="お電話番号" class="entry__form__textbox">
                 
                     <p for="都道府県" class="entry__form__name">都道府県*</p>

@@ -79,15 +79,15 @@ $confirmDsp = 1;
 $jumpPage = 1;
 
 // 送信完了後に表示するページURL（上記で1を設定した場合のみ）※httpから始まるURLで指定ください。（相対パスでも基本的には問題ないです）
-$thanksPage = "http://hoshitetsu-blog.com";
+$thanksPage = "http://hoshitetsu-blog.com/contact-complete.html";
 
 // 必須入力項目を設定する(する=1, しない=0)
-$requireCheck = 0;
+$requireCheck = 1;
 
 /* 必須入力項目(入力フォームで指定したname属性の値を指定してください。（上記で1を設定した場合のみ）
 値はシングルクォーテーションで囲み、複数の場合はカンマで区切ってください。フォーム側と順番を合わせると良いです。 
 配列の形「name="○○[]"」の場合には必ず後ろの[]を取ったものを指定して下さい。*/
-$require = array('お名前','Email');
+$require = array('会社名','担当者名','フリガナ','メールアドレス','お電話番号','都道府県');
 
 
 //----------------------------------------------------------------------
@@ -116,7 +116,8 @@ $remail_text = <<< TEXT
 遅くなる場合がございますので
 早急の場合は
 公式LINEかemailにてご連絡ください。
-link@virul-by-link.com
+公式ライン：https://lin.ee/NBiZPO2
+Eメール：link@virul-by-link.com
 代表　山田和仁
 
 TEXT;
@@ -266,7 +267,6 @@ else if($confirmDsp == 1){
 </head>
 <body>
 
-<!-- ▲ Headerやその他コンテンツなど　※自由に編集可 ▲-->
 
 <!-- ▼************ 送信内容表示部　※編集は自己責任で ************ ▼-->
     <!-- lp本体 -->
@@ -367,13 +367,13 @@ else if($confirmDsp == 1){
         <!-- フォーム確認 -->
             <section  class="contact-confirm">
 				<div id="formWrap">
-				<?php if($empty_flag == 1){ ?>
-				<div align="center">
-				<h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
-				<?php echo $errm; ?><br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()" class="back-button">
-				</div>
-				<?php }else{ ?>
-				<?php } ?>
+					<?php if($empty_flag == 1){ ?>
+					<div align="center">
+					<h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4>
+					<?php echo $errm; ?><br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()" class="back-button">
+					</div>
+					<?php }else{ ?>
+					<?php } ?>
 				</div>
 				<!-- /formWrap -->
 
@@ -464,7 +464,7 @@ else if($confirmDsp == 1){
 				</form><!-- /確認部分本体 -->
 			
 
-				<form action="mail.php" method="post">
+				<form action="contact-confirm.php" method="post">
           			<?php echo confirmOutput($_POST);//入力内容を表示?>
 						<!-- ボタン 確認 -->
 					<p class="contact-confirm__item">
@@ -564,7 +564,12 @@ else if($confirmDsp == 1){
 	</div><!-- /formWrap -->
 <!-- ▲ *********** 送信内容確認部　※編集は自己責任で ************ ▲-->
 
-<!-- ▼ Footerその他コンテンツなど　※編集可 ▼-->
+    <!-- jquery/js -->
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+    <script src="./assets/js/common.js"></script>
 </body>
 <style type="text/css">
 	/* 自由に編集下さい */

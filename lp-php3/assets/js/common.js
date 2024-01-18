@@ -3,6 +3,14 @@ $(".l-header__hamburger").click(function () {
     $(this).toggleClass('open');
     $(".sp-menu").toggleClass('open');
 });
+$(".sp-menu__item a").click(function () {
+    $(".l-header__hamburger").removeClass('open');
+    $(".sp-menu").removeClass('open');
+});
+$(".entry-contact__button").click(function () {
+    $(".l-header__hamburger").removeClass('open');
+    $(".sp-menu").removeClass('open');
+});
 
 // lp-topのfaq
 $(".faq__question--1").click(function() {
