@@ -465,7 +465,9 @@ else if($confirmDsp == 1){
 			
 
 				<form action="contact-confirm.php" method="post">
-          			<?php echo confirmOutput($_POST);//入力内容を表示?>
+					<div class="form-none">
+						<?php echo confirmOutput($_POST);//入力内容を表示?>
+					</div>
 						<!-- ボタン 確認 -->
 					<p class="contact-confirm__item">
 						<input class="contact-confirm__riset-submit" type="submit" value="＞　確　認　"><!-- /ボタン 確認 -->
@@ -587,6 +589,10 @@ else if($confirmDsp == 1){
 	.back-button{
 		display: block;
 		margin: 0 auto;
+	}
+
+	.form-none{
+		display: none;
 	}
 </style>
 </html>
