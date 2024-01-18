@@ -1,0 +1,104 @@
+// お問い合わせ確認画面
+.contact-confirm {
+    max-width: 500px;
+    width: calc(100% - 40px);
+    margin: 20px auto 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 0px;
+
+    &__p{
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.2em;
+        line-height: 38px;
+        text-align: center;
+        color: #000;
+        margin: 25px 0 35px;
+
+    }
+    &__table {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    /* アイテム */
+    &__item {
+        width: calc(100% - 28px);
+        margin: 0 auto;
+    }
+    &__item:last-child {
+        padding-bottom: 30px;
+        .contact-confirm__title, 
+        .contact-confirm__text {
+            border-bottom: none;
+
+        }
+    }
+    
+    &__title,
+    &__text {
+        display: block;
+        text-align: left;
+        font-size: 14px;
+        width: calc(100% - 28px);
+        margin: 0 auto;
+    }
+    &__title {
+        text-align: left;
+        color: #000;
+        margin: 10px auto 12px;
+    }
+    &__text {
+        letter-spacing: 0.15em;
+        line-height: 30px;
+        text-align: left;
+        color: #000;
+        border-bottom: dotted 1px #000;
+        padding-bottom: 10px;
+        overflow: hidden;
+
+        &--tel{
+            margin-right: 10px;
+        }
+        &--tel:last-child{
+            margin-right: 0px;
+        }
+        &--line{
+            display: block;
+            width: 15px;
+            margin-right: 10px;
+            height: 1px;
+            background-color: #000;
+        }
+    }
+
+    /* フォームリセット ボタン */
+    &__riset-submit {
+        display: block;
+        width: 300px;
+        margin: 0 auto ;
+        font-weight: bold;
+        padding: 17px 0 ;
+        font-size: 14px;
+        line-height: 14px;
+        color: #000;
+        background-color: #fff;
+        cursor: pointer;
+        box-sizing: border-box;
+        border: solid #000 1px; /* 任意の値 */
+        border-radius: 5px; /* 任意の値 */
+    }
+    &__riset-submit:hover {
+        color: #8A8A8A;
+        background-color: #fff;
+        border: solid #8A8A8A 2px;
+    }
+    
+    /* ボタン */
+    &__submit-primary {
+        color: #fff;
+        background-color: #000;
+    }
+}
