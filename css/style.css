@@ -367,7 +367,7 @@ a {
   background-color: #3E87FD;
   display: none;
   padding-top: 100px;
-  max-width: 420px;
+  max-width: 500px;
   width: 100%;
   margin: 0 auto;
   height: calc(100vh - 100px);
@@ -551,6 +551,9 @@ a {
   transform: translate(0%, -50%);
 }
 
+.catch {
+  padding-top: 80px;
+}
 .catch__contain {
   width: calc(100% - 40px);
   margin: 0 auto;
@@ -1508,15 +1511,13 @@ a {
   margin: 10px auto 12px;
 }
 .contact-confirm__text {
-  max-width: calc(100vw - 40px);
   letter-spacing: 0.15em;
   line-height: 30px;
   text-align: left;
   color: #000;
   border-bottom: dotted 1px #000;
   padding-bottom: 10px;
-  white-space: normal;
-  overflow-wrap: break-word;
+  overflow: hidden;
 }
 .contact-confirm__text--tel {
   margin-right: 10px;
