@@ -107,7 +107,7 @@
             </div><!-- /スマホメニュー -->
 
             <!-- fv -->
-            <!-- <div class="fv">
+            <div class="fv">
                 <div class="fv__area">
                     <div class="fv__img">
                         <img src="./assets/img/fv-roppongi.png" alt="六本木">
@@ -116,7 +116,7 @@
                         <img src="./assets/img/fv-scroll.png" alt="scroll">
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- /fv -->
 
             <!-- catch -->
@@ -138,7 +138,7 @@
                     <div class="catch__month">
                         <span>着手1ヶ月で</span>納品いたします！
                     </div>
-                    <!-- <p class="catch__plan">六本木の法人限定</p> -->
+                    <p class="catch__plan">六本木の法人限定</p>
                     <p class="catch__plan -red">５社<span>までの</span></p>
                     <p class="catch__plan">限定料金&限定プラン</p>
                 </div>
@@ -622,7 +622,6 @@
                     <div class="follow-me__btn follow-me__btn--line"><a href="https://lin.ee/NBiZPO2"><img src="./assets/img/sns-line.png" alt="line">LINE</a></div>
                     <div class="follow-me__btn follow-me__btn--instagram"><a href="https://www.instagram.com/link___japan"><img src="./assets/img/sns-instagram.png" alt="instagram">Instagram</a></div>
                 </div>
-                
                 <!-- フォーム -->
                 <form method="post" action="contact-confirm.php" class="entry__form">
                     <div class="entry__form__radio">
@@ -693,11 +692,10 @@
                 </h2>
                 <ul class="company__list">
                     <li class="company__item">株式会社LINK</li>
-                    <li class="company__item">最高経営責任者　山田　和仁</li>
-                    <li class="company__item">最高執行責任者　辰巳　友希</li>
+                    <li class="company__item">山田　和仁</li>
                     <li class="company__item">東京都港区南青山2-2-15</li>
                     <li class="company__item">ロボット、人工知能開発をおこなっています</li>
-                    <li class="company__item">スタッフ数22名</li>
+                    <li class="company__item">スタッフ数220名</li>
                     <li class="company__item">設立2022年</li>
                 </ul>
             </div><!-- /company -->
@@ -711,7 +709,7 @@
                 </div>
                 <ul class="asterisk-under__menu">
                     <li class="asterisk-under__list">
-                        <a href="#desire">アステリスクとは</a>
+                        <a href="#desire">アステリスクとは</a>ステステ
                     </li>
                     <li class="asterisk-under__list">
                         <a href="#why">秘密</a>

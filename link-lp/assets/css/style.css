@@ -553,8 +553,7 @@ a {
 
 .catch__contain {
   width: calc(100% - 40px);
-  margin: 73px auto 0;
-  padding-top: 30px;
+  margin: 0 auto;
 }
 .catch__title {
   font-family: "Hiragino Sans";

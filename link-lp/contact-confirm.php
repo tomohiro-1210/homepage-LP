@@ -289,37 +289,37 @@ else if($confirmDsp == 1){
             <div class="sp-menu">
                 <ul class="sp-menu__list">
                     <li class="sp-menu__item">
-                        <a href="https://link-world.jp/weblp#desire">
+                        <a href="https://hoshitetsu-blog.com#desire">
                             <span class="sp-menu__number">01</span>
                             <span class="sp-menu__name">アステリスクとは</span>
                         </a>
                     </li>
                     <li class="sp-menu__item">
-                        <a href="https://link-world.jp/weblp#why">
+                        <a href="https://hoshitetsu-blog.com#why">
                             <span class="sp-menu__number">02</span>
                             <span class="sp-menu__name">秘密</span>
                         </a>
                     </li>
                     <li class="sp-menu__item">
-                        <a href="https://link-world.jp/weblp#flow">
+                        <a href="https://hoshitetsu-blog.com#flow">
                             <span class="sp-menu__number">03</span>
                             <span class="sp-menu__name"><span class="mark">＊</span>の強み</span>
                         </a>
                     </li>
                     <li class="sp-menu__item">
-                        <a href="https://link-world.jp/weblp#development">
+                        <a href="https://hoshitetsu-blog.com#development">
                             <span class="sp-menu__number">04</span>
                             <span class="sp-menu__name">納品の流れ</span>
                         </a>
                     </li>
                     <li class="sp-menu__item">
-                        <a href="https://link-world.jp/weblp#plan">
+                        <a href="https://hoshitetsu-blog.com#plan">
                             <span class="sp-menu__number">05</span>
                             <span class="sp-menu__name">プラン/料金</span>
                         </a>
                     </li>
                     <li class="sp-menu__item">
-                        <a href="https://link-world.jp/weblp#company">
+                        <a href="https://hoshitetsu-blog.com#company">
                             <span class="sp-menu__number">06</span>
                             <span class="sp-menu__name">会社概要</span>
                         </a>
@@ -331,7 +331,7 @@ else if($confirmDsp == 1){
                     <div class="entry-contact__item">
                         <p class="entry-contact__word">＞ まずはご相談 & 開発依頼</p>
                         <div class="entry-contact__button">
-                            <a href="https://link-world.jp/weblp#entry" class="entry-contact__button__text">
+                            <a href="https://hoshitetsu-blog.com#entry" class="entry-contact__button__text">
                                 <span class="entry-contact__button__text--en">ENTRY</span>
                                 <span class="entry-contact__button__text--ja">ご応募</span>
                             </a>
@@ -340,7 +340,7 @@ else if($confirmDsp == 1){
                     <div class="entry-contact__item">
                         <p class="entry-contact__word">＞ その他ご質問・お問い合わせ</p>
                         <div class="entry-contact__button">
-                            <a href="https://link-world.jp/weblp#contact" class="entry-contact__button__text">
+                            <a href="https://hoshitetsu-blog.com#contact" class="entry-contact__button__text">
                                 <span class="entry-contact__button__text--en">CONTACT</span>
                                 <span class="entry-contact__button__text--ja">お問い合わせ</span>
                             </a>
@@ -498,22 +498,22 @@ else if($confirmDsp == 1){
             </div>
             <ul class="asterisk-under__menu">
                 <li class="asterisk-under__list">
-                    <a href="https://link-world.jp/weblp#desire">アステリスクとは</a>ステステ
+                    <a href="https://hoshitetsu-blog.com#desire">アステリスクとは</a>ステステ
                 </li>
                 <li class="asterisk-under__list">
-                    <a href="https://link-world.jp/weblp#why">秘密</a>
+                    <a href="https://hoshitetsu-blog.com#why">秘密</a>
                 </li>
                 <li class="asterisk-under__list">
-                    <a href="https://link-world.jp/weblp#flow">＊の強み</a>
+                    <a href="https://hoshitetsu-blog.com#flow">＊の強み</a>
                 </li>
                 <li class="asterisk-under__list">
-                    <a href="https://link-world.jp/weblp#development">納品までの流れ</a>
+                    <a href="https://hoshitetsu-blog.com#development">納品までの流れ</a>
                 </li>
                 <li class="asterisk-under__list">
-                    <a href="https://link-world.jp/weblp#plan">プラン/料金</a>
+                    <a href="https://hoshitetsu-blog.com#plan">プラン/料金</a>
                 </li>
                 <li class="asterisk-under__list">
-                    <a href="https://link-world.jp/weblp#company">会社概要</a>
+                    <a href="https://hoshitetsu-blog.com#company">会社概要</a>
                 </li>
             </ul>
         </div>
@@ -523,7 +523,7 @@ else if($confirmDsp == 1){
             <div class="entry-contact__item">
                 <p class="entry-contact__word">＞ まずはご相談 & 開発依頼</p>
                 <div class="entry-contact__button">
-                    <a href="https://link-world.jp/weblp#entry" class="entry-contact__button__text">
+                    <a href="https://hoshitetsu-blog.com#entry" class="entry-contact__button__text">
                         <span class="entry-contact__button__text--en">ENTRY</span>
                         <span class="entry-contact__button__text--ja">ご応募</span>
                     </a>
@@ -532,7 +532,7 @@ else if($confirmDsp == 1){
             <div class="entry-contact__item">
                 <p class="entry-contact__word">＞ その他ご質問・お問い合わせ</p>
                 <div class="entry-contact__button">
-                    <a href="https://link-world.jp/weblp#contact" class="entry-contact__button__text">
+                    <a href="https://hoshitetsu-blog.com#contact" class="entry-contact__button__text">
                         <span class="entry-contact__button__text--en">CONTACT</span>
                         <span class="entry-contact__button__text--ja">お問い合わせ</span>
                     </a>
