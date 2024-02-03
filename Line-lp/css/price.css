@@ -1,0 +1,121 @@
+
+.plan {
+    border-top: solid 2px #fff;
+    padding-top: 100px;
+  }
+  .plan__contain {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+  .plan__wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .plan__tabs {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  .plan__tab {
+    font-family: "Hiragino Sans";
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    line-height: 26px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: calc(50% - 10px);
+    padding: 10px 0;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+  }
+  .plan__tab.active {
+    background-color: #000;
+    color: #fff;
+  }
+  .plan__menu {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  .plan__menu.active {
+    display: block;
+  }
+  .plan__list:not(:last-child) {
+    margin-bottom: 15px;
+    border-bottom: dotted 1px #000;
+  }
+  .plan__name, .plan__detail {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+  }
+  .plan__name {
+    color: #FF0000;
+  }
+  .plan__detail {
+    color: #000;
+    padding-bottom: 3px;
+  }
+  
+  #tab2,#tab2-pc {
+    border: 1px solid #000;
+    background-color: #000;
+  }
+  #tab2 .plan__detail,
+  #tab2-pc .plan__detail {
+    color: #fff;
+  }
+  #tab2 .plan__list:not(:last-child),
+  #tab2-pc .plan__list:not(:last-child) {
+    margin-bottom: 15px;
+    border-bottom: dotted 1px #fff;
+  }
+  #tab2 .plan__list:last-child,
+  #tab2-pc .plan__list:last-child {
+    padding-bottom: 20px;
+  }  
+  @media screen and (min-width:769px) {
+    .plan__contain {
+      margin: 0 auto;
+    }
+    .plan__menu {
+        width: calc(50% - 15px);
+        max-width: 420px;
+      display: none;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+    .plan__menu:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .pc-on{
+    display: block;
+  }
+  .sp-on{
+    display: none;
+  }
+  
+@media screen and (max-width:768px) {
+    .pc-on{
+      display: none;
+    }
+    .sp-on{
+      display: block;
+    }
+    
+
+}

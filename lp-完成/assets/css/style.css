@@ -1461,7 +1461,7 @@ a {
 }
 
 .contact-confirm {
-  max-width: 500px;
+  max-width: 420px;
   width: calc(100% - 40px);
   margin: 20px auto 30px;
   background-color: #fff;
@@ -1600,3 +1600,15 @@ a {
   border-bottom: solid 2px #000;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* 下記は追記CSS */
+.blog {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  margin: 80px auto;
+}
+
+.blog__img {
+  width: fit-content;
+}
+
