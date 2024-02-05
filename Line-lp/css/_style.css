@@ -11,18 +11,17 @@
 /////////////////////////////////////////////////////*/
 .container_first {
   width: 100%;
-  height: var(--main-height);
+  height: fit-content;
 }
 .container_first .top_bg {
-    background-color: #21B300;
     background-image: url(../images/bg/bg01.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     object-fit: cover;
-    height: 1100px;
-    border-top: 5px solid rgba(158,151,92,1.00);
-    border-bottom: 5px solid rgba(158,151,92,1.00);
+    height: 500px;
     text-align: center;	
+    margin-top: 130px;
 }
 .container_first .top_main1 {
     width: 70%;
@@ -31,10 +30,22 @@
 }
 
 .container_first .top_hukidashi {
-    width: 30%;
-    text-align: left;
-    float: left;
-    margin-top: -120px;
+    width: auto;
+    position: relative;
+    height: 500px;
+}
+.container_first .top_hukidashi p {
+  font-family: "Sans Serif Collection";
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  line-height: 50px;
+  text-align: left;
+  color: #fff;
+  position: absolute;
+  bottom:0%;
+  left: 20%;
+  text-shadow: rgba(0,0,0,0.45) 3px 3px 3px;
 }
 .container_first .top_main1 img {
   width: auto;
@@ -50,15 +61,12 @@
 
 
 @media screen and (max-width: 1024px) {
-  .container_first {
-  
-	   height: 400px;
-  }
   .container_first .top_bg {
     width: 100%;
 	position: relative; 
     margin-top: 0px;
-	    height: 410px;
+    height: 500px;
+    margin-top: 120px;
 	  
   }
   .container_first .top_main1 {
@@ -70,23 +78,57 @@
   }
   .container_first .top_main1 img {
       margin-top: 50px;
-	    height: 350px;
+	    height: 500px;
    
   } 
-	
-	
-.container_first .top_hukidashi {
-    width: 60%;
-    float: left;
-    margin-top: -30px;	
-}
 
-.container_first .top_hukidashi img {
-	 height: 400px;
-  width: 100%;
-}
+  .container_first .top_hukidashi {
+      width: 100%;
+      position: relative;
+      height: 500px;
+  }
+  .container_first .top_hukidashi p {
+    font-family: "Sans Serif Collection";
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 51px;
+    text-align: left;
+    color: #fff;
+    bottom:0%;
+    left: 25px;
+    text-shadow: rgba(0,0,0,0.45) 3px 3px 3px;
+  }
+  .container_first .top_hukidashi img {
+    height: 400px;
+    width: 100%;
+  }
  
 
+}
+@media screen and (max-width: 768px) {
+.container_first .top_bg {
+    width: 100%;
+	position: relative; 
+  margin-top: 100px;
+	  
+  }
+
+  .container_first .top_hukidashi {
+      width: 100%;
+      position: relative;
+  }
+  .container_first .top_hukidashi p {
+    font-family: "Sans Serif Collection";
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    line-height: 43px;
+    text-align: left;
+    color: #fff;
+    bottom:0%;
+    left: 20px;
+    text-shadow: rgba(0,0,0,0.45) 3px 3px 3px;
+  }
 }
 /*/////////////////////////////////////////////////////
 /////////////////////////block1////////////////////////
@@ -97,14 +139,13 @@
     background-repeat: repeat-y;
     text-align: center;
     padding-bottom: 100px;
-    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .container_01 .titile_box{
     text-align: center;
-    padding-top: 155px;
+    padding-top: 100px;
     margin-left: auto;
     margin-right: auto;   
 }
@@ -119,7 +160,7 @@
     font-size: 2.5em;
     font-weight: 800;
     line-height: -0.09em;
-    color: rgba(0,156,7,1.00);
+    color: rgb(2, 172, 11);
 }
 
 .container_01 .titile_box h3 {
@@ -135,7 +176,6 @@
     background-color: rgba(255,255,255,1.00);
     margin-left: 10px;
     margin-right: 10px;
-   
     padding-left: 20px;
     padding-right: 20px;	
 }
@@ -158,12 +198,24 @@
 
 @media screen and (max-width:1024px) {
     .container_01 .titile_box {
-        margin-top: -100px;
+        margin-top: 00px;
 		
     }
 
     .container_01 .titile_box h2 {
     width: 100%;
+    	
+    }
+}
+@media screen and (max-width:768px) {
+    .container_01 .titile_box {
+        margin-top: 00px;
+		
+    }
+
+    .container_01 .titile_box h2 {
+    width: 100%;
+    font-size: 1.8rem;
     	
     }
 }

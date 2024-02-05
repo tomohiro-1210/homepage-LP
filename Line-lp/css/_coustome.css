@@ -69,8 +69,8 @@ footer .footer_txt {
 a.btn--orange {
   color: #fff;
   font-size: 1.4em;
-  background-color: #FF8B00;
-  border-bottom: 5px solid #b84c00;
+  background-color: rgb(2, 172, 11);
+  border-bottom: 5px solid rgb(0, 124, 7);
   font-weight: 700;
   padding-right: 50px;
   padding-left: 50px;
@@ -81,8 +81,7 @@ a.btn--orange {
 a.btn--orange:hover {
   margin-top: 3px;
   color: #fff;
-  background: #f56500;
-  border-bottom: 2px solid #b84c00;
+  border-bottom: 2px solid rgb(0, 124, 7);
 }
 a.btn--shadow {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
@@ -118,7 +117,6 @@ a.btn--shadow {
 }
 .slider_section1 .section_title2 {
     margin-bottom: 0px;
-    border-top: 15px solid #A5FF75;
     padding-top: 50px;
 }
 .slider_section1 .section_title2 img {
@@ -134,7 +132,7 @@ a.btn--shadow {
     font-size: 2em;
     color: #FFFFFF;
     margin-bottom: 24px;
-    background-color: #07FF00;
+    background-color: rgb(0, 181, 255);
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom: 5px;

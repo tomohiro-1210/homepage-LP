@@ -355,7 +355,14 @@ header.fixed .navbar {
 }
 
 .navbar-brand img {
-    width: 150px;
+    height: 80px;
+}
+
+@media screen and (max-width:768px) {
+    .navbar-brand img {
+        height: 60px;
+    }
+
 }
 
 /* navigation bar dropdown */
