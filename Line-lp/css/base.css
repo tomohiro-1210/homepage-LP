@@ -355,7 +355,7 @@ header.fixed .navbar {
 }
 
 .navbar-brand  {
-    font-family: 'Yantramanav', sans-serif;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
     font-weight: bold;
     font-size: 50px;
     letter-spacing: 0.05em;
@@ -379,7 +379,7 @@ header.fixed .navbar {
 
 @media screen and (max-width:768px) {
     .navbar-brand  {
-        font-family: 'Yantramanav', sans-serif;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
         font-weight: bold;
         font-size: 40px;
         letter-spacing: 0.05em;
