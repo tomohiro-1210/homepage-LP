@@ -132,7 +132,7 @@ a.btn--shadow {
     font-size: 2em;
     color: #FFFFFF;
     margin-bottom: 24px;
-    background-color: rgb(0, 181, 255);
+    background-color: rgb(2, 172, 11);
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
@@ -233,7 +233,7 @@ a.btn--shadow {
     font-size: 1.1em;
     color: #FFFFFF;
     margin-bottom: 24px;
-    background-color: #00B5FF;
+    background-color: rgb(2, 172, 11);
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
@@ -328,17 +328,21 @@ a.btn--shadow {
   color: #009C00;
   margin-right: 9px;
 }
+
+
 /*補足*/
 .modern_ui_section .empathy_bk {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  font-size: 2.5em;
+  font-size: 4.0rem;
   margin-top: 80px;
   text-align: center;
   font-weight: 700;
   line-height: 1.3em;
+  font-weight: bold;
   color: transparent;
   background: repeating-linear-gradient(90deg, #5D2200 0, #3B1500 100%);
   -webkit-background-clip: text;
@@ -395,12 +399,15 @@ a.btn--shadow {
   }
   .modern_ui_section .empathy_bk {
     margin-top: 0px;
-    font-size: 1.2em;
+    font-size: 1.5rem;
     text-align: center;
   }
   .modern_ui_section .container {
     padding-top: 30px;
     padding-bottom: 0px;
+  }
+  .col-lg-4.empathy__img {
+    margin-bottom: 30px;
   }
 }
 /*/////////////////////////////////////////////////////

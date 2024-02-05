@@ -21,7 +21,7 @@
     object-fit: cover;
     height: 500px;
     text-align: center;	
-    margin-top: 130px;
+    margin-top: 100px;
 }
 .container_first .top_main1 {
     width: 70%;
@@ -66,7 +66,7 @@
 	position: relative; 
     margin-top: 0px;
     height: 500px;
-    margin-top: 120px;
+    margin-top: 100px;
 	  
   }
   .container_first .top_main1 {
@@ -109,7 +109,7 @@
 .container_first .top_bg {
     width: 100%;
 	position: relative; 
-  margin-top: 100px;
+  margin-top: 80px;
 	  
   }
 
@@ -134,11 +134,10 @@
 /////////////////////////block1////////////////////////
 /////////////////////////////////////////////////////*/
 .container_01 {
-    background-color: #F9FDCA;
+    /* background-color: #F9FDCA; */
     background-size: 100% auto;
     background-repeat: repeat-y;
     text-align: center;
-    padding-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
 }

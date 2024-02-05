@@ -354,14 +354,50 @@ header.fixed .navbar {
 	animation: pulse-blue-small-sm 3.5s infinite
 }
 
-.navbar-brand img {
-    height: 80px;
+.navbar-brand  {
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 0.05em;
+    line-height: 87px;
+    text-align: left;
+    color: #3e87fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.navbar-brand span {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 26px;
+    text-align: left;
+    color: #3e87fd;
+    margin-top: 33px;
 }
 
 @media screen and (max-width:768px) {
-    .navbar-brand img {
-        height: 60px;
+    .navbar-brand  {
+        font-family: 'Yantramanav', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        letter-spacing: 0.05em;
+        line-height: 87px;
+        text-align: left;
+        color: #3e87fd;
+    
     }
+    .navbar-brand span {
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 26px;
+        text-align: left;
+        color: #3e87fd;
+        margin-top: 25px;
+    }
+    
 
 }
 
