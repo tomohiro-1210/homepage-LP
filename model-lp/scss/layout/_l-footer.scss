@@ -1,0 +1,104 @@
+.l-footer {
+  margin-top: 133px;
+    color: #fff;
+    position: relative;
+    padding: 0 0 0;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    &__contain {
+      max-width: 430px;
+      margin: 0 auto;
+    }
+    &__company {
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &__company span {
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 25px;
+      text-align: center;
+      display: inline-block;
+      color: #fff;
+      margin-left: 10px;
+    }
+    &__asterisk {
+      font-family: "Aglet Slab";
+      font-weight: normal;
+      font-size: 15px;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 50px;
+    }
+    &__wrap {
+      margin-bottom: 45px;
+    }
+    &__col__child{
+        text-align: center;
+    }
+    &__col__child a {
+      font-size: 14px;
+      text-align: center;
+      display: inline-block;
+      color: #fff;
+    }
+    &__col__child a:first-child {
+      border-right: solid 1px #fff;
+      margin-right: 16px;
+      padding-right: 16px;
+    }
+    &__address {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    &__nav {
+      margin-bottom: 40px;
+    }
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 228px;
+      margin: 0 auto 40px;
+    }
+    &__link a {
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      display: inline-block;
+      color: #fff;
+    }
+    &__link {
+      width: calc(100% / 2 - 10px);
+    }
+    &__link a {
+      width: 100%;
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: left;
+      display: block;
+      color: #fff;
+    }
+    &__link:nth-child(2n - 1) {
+      margin-right: 20px;
+    }
+    &__link:not(:last-child) {
+        margin-right: 00px;
+      margin-bottom: 20px;
+    }
+    &__instagram {
+      width: 135px;
+      height: 34px;
+      margin: 0 auto 75px;
+    }
+    &__copyright {
+      font-size: 12px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }

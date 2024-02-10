@@ -1,0 +1,163 @@
+html{
+    color: #fff;
+    font-family: "Hiragino Maru Gothic ProN";
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+img{
+    display: block;
+}
+
+.lp-wrap{
+    background-color: #C2CFFC;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+// ボタン
+.c-button {
+  background-color: #FFF9B1;
+  width: 200px;
+  height: 40px;
+  position: relative;
+  margin: 0 auto;
+  span{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: left;
+    color: #699cd0;
+    border-left: solid 2px #699cd0;
+    padding-left: 10px;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } 
+}
+
+
+
+// フォントの色
+.font-orange {
+    color: #FF953B;
+    display: inline-block;
+  }
+  
+  .font-purple {
+    color: #C678F1;
+    display: inline-block;
+  }
+  
+  .font-sky {
+    color: #73D0FF;
+    display: inline-block;
+  }
+  
+  .font-pink {
+    color: #FFAAE7;
+    display: inline-block;
+  }
+  
+  .font-red {
+    color: #FF0000;
+    display: inline-block;
+  }
+  
+  .font-white {
+    color: #FFf;
+    display: inline-block;
+  }
+
+// メニュー
+.menu {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    display: none;
+    opacity: 0;
+    z-index: 9000;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    &__wrapper {
+      max-width: 420px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__list {
+      &__child{
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__item {
+      width: 100%;
+      a {
+        width: 100%;
+        color: #383737;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        color: #383737;
+      }
+      &--weblp a{
+        color: #64A5FF;
+      }
+      &--eclp a{
+        color: #FF5D5D;
+      }
+      &--linelp a{
+        color: #6AC16A;
+      }
+      &--modellp a{
+        color: #EA53F0;
+      }
+    }
+    &__item span {
+      display: inline-block;
+    }
+    &__item:nth-child(n+3) {
+      margin-top: 0px;
+    }
+    &__item:nth-child(2n) {
+      margin-left: 0px;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 12px;
+    }
+    &__instagram{
+      width: 135px;
+      height: 34px;
+      margin: 0 auto;
+    }
+  }
+  
+  .sp-menu.open {
+    display: block;
+    opacity: 1;
+  }
+  
+  

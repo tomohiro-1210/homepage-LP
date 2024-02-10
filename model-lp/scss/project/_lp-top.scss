@@ -1,0 +1,300 @@
+// fv
+.p-fv {
+    width: 100%;
+    &__wrap{
+        height: 343px;
+        background-image: url(../img/top-fv.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        margin-top: 80px;
+        position: relative;
+    }
+    &__catch {
+        font-weight: normal;
+        font-size: 22px;
+        text-align: left;
+        letter-spacing: 13px;
+        color: #fa7eff;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        white-space: nowrap;
+        span{
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+        span:last-child{
+            margin-bottom: 20px;
+        }
+    }
+    &__catch.--1 {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    &__catch.--2 {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+    }
+
+    // テキスト
+    &__text{
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: left;
+        color: #fff;
+        margin-top: 201px;
+        padding: 0 28px;
+    }
+}
+
+// POINT
+.p-point {
+    margin-top: 61px;
+    
+    &__title {
+        font-family: "Hiragino Maru Gothic ProN";
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 45px;
+        text-align: center;
+        color: #fff;
+        margin: 0 auto 6.5px;
+        width: 287px;
+        border-bottom: solid 2px #FCBAFF;
+    }
+    &__item {
+        position: relative;
+        width: 130px;
+        margin: 0 auto;
+        img{
+            position: relative;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto;
+            z-index: 10;
+        }
+    }
+    &__item--1 {
+        margin-top: 90px;
+    }
+    &__item--2 {
+        margin-top: 146px;
+    }
+    &__item--3 {
+        margin-top: 119px;
+    }
+    &__circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        position: absolute;
+    }
+    &__circle--pink {
+        background-color: #F2C7EB;
+        top: 30%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+    }
+    &__circle--blue {
+        background-color: #9DA1FF;
+        top: 0%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+    }
+    &__circle--purple {
+        background-color: #FA7EFF;
+        top: 100%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// 活動を通じてチャンスを
+.p-chance {
+    margin-top: 145px;
+    &__title {
+        font-family :
+        YuMincho,    /* Mac用 */
+        'Yu Mincho', /* Windows用 */
+        serif;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 34px;
+        text-align: left;
+        color: #8d7eff;
+        width: fit-content;
+        margin: 0 auto 58px;
+        span{
+            display: block;
+            padding:0 5px 6.5px;
+            border-bottom: solid 2px #fff;
+            width: fit-content;
+        }
+    }
+    &__title--top {
+
+    }
+    &__title--bottom {
+        margin-left: 71px;
+    }
+    &__img {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 16px;
+    }
+    &__foot {
+        font-weight: normal;
+        font-size: 31px;
+        line-height: 47px;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 24px;
+        padding: 0 23px;
+    }
+    &__text {
+        font-family: "Hiragino Maru Gothic ProN";
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: left;
+        color: #fff;
+        padding: 0 28px;
+    }
+
+}
+
+// 活動の流れ
+.p-flow {
+    margin-top: 80px;
+    &__title {
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 27px;
+        text-align: center;
+        color: #fff;
+
+    }
+    // アイテム
+    &__item {
+        margin-top: 90px;
+    }
+    &__wrap{
+        display: flex;
+        justify-content: left;
+        padding: 0 30px;
+    }
+    // 数字
+    &__number {
+        font-weight: normal;
+        font-size: 28px;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        background-color: #F2C7EB;
+        border-radius: 20px;
+    }
+    // フローの工程
+    &__subtitle {
+    }
+    &__subtitle--1 {
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        margin-left: 34px;
+
+    }
+    &__subtitle--2 {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        color: #fff;
+        margin-left: 26px;
+
+    }
+    &__subtitle--3 {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: #fff;
+        margin-left: 46px;
+
+    }
+    &__information {
+        font-family :
+        YuGothic,    /* Mac用 */
+        'Yu Gothic', /* Windows用 */
+        serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+        color: #fff;
+        width: fit-content;
+        margin: 53px auto 0;
+    }
+    // ボタン
+    .c-button {
+        margin-top: 99px;
+    }
+}
+
+// 応募条件
+.p-apply {
+    margin-top: 86px;
+    padding: 0 16px;
+    &__title {
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 35px;
+        text-align: left;
+        color: #fff;    
+        margin-bottom: 10px;    
+    }
+    &__text {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: left;
+        color: #fff;
+    }
+}
+
+// CONTACT
+.p-contact {
+    margin-top: 66px;
+    &__title {
+        font-family: "Hiragino Maru Gothic ProN";
+        font-weight: normal;
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+    }
+    &__text {
+        font-family :
+        YuGothic,    /* Mac用 */
+        'Yu Gothic', /* Windows用 */
+        serif;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 30px;
+        text-align: left;
+        color: #fff;
+        width: fit-content;
+        margin: 50px auto 0;
+    }
+    // ボタン
+    .c-button {
+        margin-top: 78px;
+    }
+}
+

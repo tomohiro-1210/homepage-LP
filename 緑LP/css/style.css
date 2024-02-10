@@ -1593,3 +1593,44 @@ to {
   color: #fff;
   background-color: #000;
 }
+/* wpカスタマイズ */
+.blog-single strong{
+  font-weight: bold;
+}
+.blog-single .has-inline-color.has-vivid-red-color{
+  color: #CF2E2E;
+}
+.blog-single .has-inline-color.has-vivid-pink-color{
+  color: #F78DA7;
+}
+.blog-single .has-inline-color.has-white-color{
+  color: #fff;
+}
+.blog-single .has-inline-color.has-cyan-bluish-gray-color{
+  color: #ABB8C3;
+}
+.blog-single .has-inline-color.has-pale-cyan-blue-color{
+  color: #8ED1FC;
+}
+.blog-single .has-inline-color.has-luminous-vivid-orange-color{
+  color: #FF6900;
+}
+.blog-single .has-inline-color.has-luminous-vivid-amber-color{
+  color: #FCB900;
+}
+.blog-single .has-inline-color.has-vivid-cyan-blue-color{
+  color: #0693E3;
+}
+.blog-single .has-inline-color.has-light-green-cyan-color{
+  color: #7BDCB5;
+}
+.blog-single .has-inline-color.has-vivid-green-cyan-color{
+  color: #00D084;
+}
+.blog-single .has-inline-color.has-vivid-purple-color{
+  color: #9B51E0;
+}
+.blog-single .line-add{
+  width: fit-content;
+}
+/*  */
