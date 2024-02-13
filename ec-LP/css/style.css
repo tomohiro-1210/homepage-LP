@@ -320,6 +320,7 @@ header{
   align-items: end;
   margin: 0 auto;
   width: 250px;
+  white-space: nowrap;
 }
 
 .text3 .flex span{
